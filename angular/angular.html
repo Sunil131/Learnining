@@ -1,0 +1,656 @@
+<!DOCTYPE html>
+<!-- saved from url=(0119)http://inia.objectfrontier.com/redmine/projects/engineering/wiki/Enterprise_Web_Application_Development_using_AngularJS -->
+<html lang="en"><head><meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+<meta charset="utf-8">
+<title>Enterprise Web Application Development using AngularJS - Solution Engineering Group - iNia</title>
+<meta name="description" content="Redmine">
+<meta name="keywords" content="issue,bug,tracker">
+<meta content="authenticity_token" name="csrf-param">
+<meta content="08FcSL6U01xeZXAcLDWlkapOWvHXdjJsd3DDdEq4lHE=" name="csrf-token">
+<link rel="shortcut icon" href="http://inia.objectfrontier.com/redmine/favicon.ico?1385196105">
+<link href="./Enterprise Web Application Development using AngularJS - Solution Engineering Group - iNia_files/jquery-ui-1.9.2.css" media="all" rel="stylesheet" type="text/css">
+<link href="./Enterprise Web Application Development using AngularJS - Solution Engineering Group - iNia_files/application.css" media="all" rel="stylesheet" type="text/css">
+
+<script src="./Enterprise Web Application Development using AngularJS - Solution Engineering Group - iNia_files/jquery-1.8.3-ui-1.9.2-ujs-2.0.3.js" type="text/javascript"></script>
+<script src="./Enterprise Web Application Development using AngularJS - Solution Engineering Group - iNia_files/application.js" type="text/javascript"></script>
+<script type="text/javascript">
+//<![CDATA[
+$(window).load(function(){ warnLeavingUnsaved('The current page contains unsaved text that will be lost if you leave this page.'); });
+//]]>
+</script>
+
+
+<script src="./Enterprise Web Application Development using AngularJS - Solution Engineering Group - iNia_files/redmine_dmsf.js" type="text/javascript"></script>
+<link href="./Enterprise Web Application Development using AngularJS - Solution Engineering Group - iNia_files/dmsf.css" media="screen" rel="stylesheet" type="text/css"> <link href="./Enterprise Web Application Development using AngularJS - Solution Engineering Group - iNia_files/jquery.fancybox-1.3.4.css" media="screen" rel="stylesheet" type="text/css"><link href="./Enterprise Web Application Development using AngularJS - Solution Engineering Group - iNia_files/lightbox.css" media="screen" rel="stylesheet" type="text/css"><script src="./Enterprise Web Application Development using AngularJS - Solution Engineering Group - iNia_files/jquery.fancybox-1.3.4.pack.js" type="text/javascript"></script><script src="./Enterprise Web Application Development using AngularJS - Solution Engineering Group - iNia_files/jquery.easing-1.3.pack.js" type="text/javascript"></script><script src="./Enterprise Web Application Development using AngularJS - Solution Engineering Group - iNia_files/lightbox.js" type="text/javascript"></script> <script type="text/javascript">
+	if(!window.jQuery) {
+	    var script = document.createElement('script');
+	    script.src = '/plugin_assets/redmine_mention_plugin/javascripts/lib/jquery.min.js';
+	    script.type = 'text/javascript';
+	    document.getElementsByTagName('body')[0].appendChild(script);
+	}
+</script>
+<script src="./Enterprise Web Application Development using AngularJS - Solution Engineering Group - iNia_files/underscore-min.js" type="text/javascript"></script>
+<script src="./Enterprise Web Application Development using AngularJS - Solution Engineering Group - iNia_files/jquery.elastic.js" type="text/javascript"></script>
+<script src="./Enterprise Web Application Development using AngularJS - Solution Engineering Group - iNia_files/jquery.events.input.js" type="text/javascript"></script>
+<script src="./Enterprise Web Application Development using AngularJS - Solution Engineering Group - iNia_files/jquery.mentionsInput.js" type="text/javascript"></script>
+<script src="./Enterprise Web Application Development using AngularJS - Solution Engineering Group - iNia_files/redmine-mention.js" type="text/javascript"></script>
+<link href="./Enterprise Web Application Development using AngularJS - Solution Engineering Group - iNia_files/jquery.mentionsInput.css" media="screen" rel="stylesheet" type="text/css"> <script src="./Enterprise Web Application Development using AngularJS - Solution Engineering Group - iNia_files/wkstatus.js" type="text/javascript"></script>
+<link href="./Enterprise Web Application Development using AngularJS - Solution Engineering Group - iNia_files/lockwarning.css" media="screen" rel="stylesheet" type="text/css"> <link href="./Enterprise Web Application Development using AngularJS - Solution Engineering Group - iNia_files/jquery.Jcrop-0.9.10.min.css" media="all" rel="stylesheet" type="text/css">
+<link href="./Enterprise Web Application Development using AngularJS - Solution Engineering Group - iNia_files/clipboard_image_paste.css" media="all" rel="stylesheet" type="text/css">
+<script src="./Enterprise Web Application Development using AngularJS - Solution Engineering Group - iNia_files/jcrop-0.9.10.min.js" type="text/javascript"></script>
+<script src="./Enterprise Web Application Development using AngularJS - Solution Engineering Group - iNia_files/clipboard_image_paste.js" type="text/javascript"></script>
+  <script type="text/javascript">
+    var j$cbp = $;
+  </script>
+
+<!-- page specific tags -->
+  <script src="./Enterprise Web Application Development using AngularJS - Solution Engineering Group - iNia_files/attachments.js" type="text/javascript"></script>
+</head>
+<body class="theme-Alternate project-engineering controller-wiki action-show">
+<div id="wrapper">
+<div id="wrapper2">
+<div id="wrapper3">
+<div id="top-menu">
+    <div id="account">
+        <ul><li><a href="http://inia.objectfrontier.com/redmine/my/account" class="my-account">My account</a></li>
+<li><a href="http://inia.objectfrontier.com/redmine/logout" class="logout" data-method="post" rel="nofollow">Sign out</a></li></ul>    </div>
+    <div id="loggedas">Logged in as <a href="http://inia.objectfrontier.com/redmine/users/579" class="user active">sunilm</a></div>
+    <ul><li><a href="http://inia.objectfrontier.com/redmine/" class="home">Home</a></li>
+<li><a href="http://inia.objectfrontier.com/redmine/my/page" class="my-page">My page</a></li>
+<li><a href="http://inia.objectfrontier.com/redmine/projects" class="projects">Projects</a></li>
+<li><a href="http://inia.objectfrontier.com/redmine/wktime/index" class="wkTime">Time &amp; Expense</a></li>
+<li><a href="http://www.redmine.org/guide" class="help">Help</a></li></ul></div>
+
+<div id="header">
+    <div id="quick-search">
+        <form accept-charset="UTF-8" action="http://inia.objectfrontier.com/redmine/projects/engineering/search" method="get"><div style="margin:0;padding:0;display:inline"><input name="utf8" type="hidden" value="✓"></div>
+        <input name="wiki_pages" type="hidden" value="1">
+        <label for="q">
+          <a href="http://inia.objectfrontier.com/redmine/projects/engineering/search" accesskey="4">Search</a>:
+        </label>
+        <input accesskey="f" class="small" id="q" name="q" size="20" type="text">
+</form>        <select id="project_quick_jump_box" name="project_quick_jump_box" onchange="if (this.value != &#39;&#39;) { window.location = this.value; }"><option value="">Jump to a project...</option><option value="" disabled="disabled">---</option><option selected="selected" value="/redmine/projects/engineering?jump=wiki">Solution Engineering Group</option><option value="/redmine/projects/mean-stack-nov-14?jump=wiki">MEAN Stack Nov-14</option></select>
+    </div>
+
+    <h1>Solution Engineering Group</h1>
+
+    <div id="main-menu">
+        <ul><li><a href="http://inia.objectfrontier.com/redmine/projects/engineering" class="overview">Overview</a></li>
+<li><a href="http://inia.objectfrontier.com/redmine/projects/engineering/activity" class="activity">Activity</a></li>
+<li><a href="http://inia.objectfrontier.com/redmine/adtasks/list?project_id=engineering" class="adtasks">Tasks</a></li>
+<li><a href="http://inia.objectfrontier.com/redmine/adsprints/list?project_id=engineering" class="adsprints">Sprints</a></li>
+<li><a href="http://inia.objectfrontier.com/redmine/adburndown/show?project_id=engineering" class="adburndown">Run charts</a></li>
+<li><a href="http://inia.objectfrontier.com/redmine/projects/engineering/roadmap" class="roadmap">Roadmap</a></li>
+<li><a href="http://inia.objectfrontier.com/redmine/projects/engineering/issues" class="issues">Issues</a></li>
+<li><a href="http://inia.objectfrontier.com/redmine/projects/engineering/issues/new" accesskey="7" class="new-issue">New issue</a></li>
+<li><a href="http://inia.objectfrontier.com/redmine/projects/engineering/issues/gantt" class="gantt">Gantt</a></li>
+<li><a href="http://inia.objectfrontier.com/redmine/projects/engineering/issues/calendar" class="calendar">Calendar</a></li>
+<li><a href="http://inia.objectfrontier.com/redmine/projects/engineering/news" class="news">News</a></li>
+<li><a href="http://inia.objectfrontier.com/redmine/projects/engineering/dmsf" class="dmsf">DMSF</a></li>
+<li><a href="http://inia.objectfrontier.com/redmine/projects/engineering/wiki" class="wiki selected">Wiki</a></li>
+<li><a href="http://inia.objectfrontier.com/redmine/projects/engineering/settings" class="settings">Settings</a></li></ul>
+    </div>
+</div>
+
+<div id="main" class="">
+    <div id="sidebar">
+          
+<h3>Wiki</h3>
+<ul>
+  <li><a href="http://inia.objectfrontier.com/redmine/projects/engineering/wiki">Start page</a></li>
+  <li><a href="http://inia.objectfrontier.com/redmine/projects/engineering/wiki/index">Index by title</a></li>
+  <li><a href="http://inia.objectfrontier.com/redmine/projects/engineering/wiki/date_index">Index by date</a></li>
+</ul>
+
+
+        
+    </div>
+
+    <div id="content">
+        
+        <div class="contextual">
+  <a href="http://inia.objectfrontier.com/redmine/projects/engineering/wiki/Enterprise_Web_Application_Development_using_AngularJS/edit" accesskey="e" class="icon icon-edit">Edit</a>
+  <a href="http://inia.objectfrontier.com/redmine/watchers/watch?object_id=83&object_type=wiki_page" class="wiki_page-83-watcher icon icon-fav-off" data-method="post" data-remote="true" rel="nofollow">Watch</a>
+  
+  
+  
+  
+<a href="http://inia.objectfrontier.com/redmine/projects/engineering/wiki/Enterprise_Web_Application_Development_using_AngularJS/history" class="icon icon-history">History</a>
+</div>
+
+<p class="breadcrumb"><a href="http://inia.objectfrontier.com/redmine/projects/engineering/wiki/Wiki">Wiki</a> » </p>
+
+
+<div class="wiki wiki-page">
+  <p><span style="color:blue;font-weight:bold;font-size:30px;">Enterprise Web Application Development using AngularJS</span></p>
+
+
+	<p>The purpose of this trail is to facilitate the developer who reading this will get a very good knowledge leads to an Advanced beginner level in Web development using Angular JS.</p>
+
+
+	<p><img src="./Enterprise Web Application Development using AngularJS - Solution Engineering Group - iNia_files/browser-logo.png" style="width:25px;" alt=""><strong>Browsers</strong></p>
+
+
+	<ul>
+	<li><a href="http://www.youtube.com/watch?v=-fmypAd12a4" class="external">How Browser works</a> <img src="./Enterprise Web Application Development using AngularJS - Solution Engineering Group - iNia_files/YouTube logo 20px h.jpg" style="width:35px;" alt=""></li>
+	</ul>
+
+
+<hr>
+
+
+	<p><img src="./Enterprise Web Application Development using AngularJS - Solution Engineering Group - iNia_files/HTML5.png" style="width:25px;" alt=""> <strong>HTML 5</strong></p>
+
+
+	<ul>
+	<li><a href="http://www.youtube.com/watch?v=mzPxo7Y6JyA" class="external">What is HTML 5</a> <img src="./Enterprise Web Application Development using AngularJS - Solution Engineering Group - iNia_files/YouTube logo 20px h.jpg" style="width:35px;" alt=""></li>
+		<li><a href="http://www.youtube.com/watch?v=siOHh0uzcuY" class="external">Intro</a> <img src="./Enterprise Web Application Development using AngularJS - Solution Engineering Group - iNia_files/YouTube logo 20px h.jpg" style="width:35px;" alt=""></li>
+		<li><a href="https://developer.mozilla.org/en-US/docs/Web/Guide/HTML/HTML5" class="external">All about HTML 5</a></li>
+	</ul>
+
+
+<hr>
+
+
+	<p><img src="./Enterprise Web Application Development using AngularJS - Solution Engineering Group - iNia_files/css3.jpg" style="width:25px;" alt=""><strong>CSS 3</strong></p>
+
+
+	<ul>
+	<li><a href="https://www.youtube.com/watch?v=Bq_oWuTRXS8&list=PLLnpHn493BHFOoBjPGOcWL1PnY0H1w5N_" class="external">Intro</a> <img src="./Enterprise Web Application Development using AngularJS - Solution Engineering Group - iNia_files/YouTube logo 20px h.jpg" style="width:35px;" alt=""></li>
+		<li><a href="http://tutorialzine.com/2013/10/12-awesome-css3-features-you-can-finally-use/" class="external">Features</a></li>
+		<li><a href="https://developer.mozilla.org/en-US/docs/Web/CSS/CSS3" class="external">All About CSS3</a></li>
+		<li>Layouts</li>
+	<ol>
+	<li><a href="http://www.youtube.com/watch?v=t7Sexebj-x4" class="external">Adaptive vs Responsive web design</a> <img src="./Enterprise Web Application Development using AngularJS - Solution Engineering Group - iNia_files/YouTube logo 20px h.jpg" style="width:35px;" alt=""></li>
+		<li><a href="http://www.youtube.com/watch?v=onxJ7lFPfqk" class="external">Media Query</a> <img src="./Enterprise Web Application Development using AngularJS - Solution Engineering Group - iNia_files/YouTube logo 20px h.jpg" style="width:35px;" alt=""></li>
+	</ol>
+	</ul>
+
+
+	<ul>
+	<li>Flexbox</li>
+	<ol>
+	<li><a href="https://www.youtube.com/watch?v=sewV3LsmoXI" class="external">Learn</a>  <img src="./Enterprise Web Application Development using AngularJS - Solution Engineering Group - iNia_files/YouTube logo 20px h.jpg" style="width:35px;" alt=""></li>
+		<li><a href="https://www.youtube.com/watch?v=0i7Xb22zzQM" class="external">Reorder columns and rows</a>  <img src="./Enterprise Web Application Development using AngularJS - Solution Engineering Group - iNia_files/YouTube logo 20px h.jpg" style="width:35px;" alt=""></li>
+		<li><a href="https://www.youtube.com/watch?v=KCZdKnP5PHo" class="external">Width, height and layout</a>  <img src="./Enterprise Web Application Development using AngularJS - Solution Engineering Group - iNia_files/YouTube logo 20px h.jpg" style="width:35px;" alt=""></li>
+		<li><a href="http://css-tricks.com/snippets/css/a-guide-to-flexbox/" class="external">Flexbox tricks</a></li>
+	</ol>
+	</ul>
+
+
+	<ul>
+	<li>Transition</li>
+	<ol>
+	<li><a href="http://www.youtube.com/watch?v=eRcAf69IdCk" class="external">transtion</a> <img src="./Enterprise Web Application Development using AngularJS - Solution Engineering Group - iNia_files/YouTube logo 20px h.jpg" style="width:35px;" alt=""></li>
+	</ol>
+	</ul>
+
+
+	<ul>
+	<li>Animation</li>
+	<ol>
+	<li><a href="https://developer.mozilla.org/en-US/docs/Web/CSS/@keyframes" class="external">@keyframes-intro</a></li>
+		<li><a href="https://www.youtube.com/watch?v=1f4DYva8w18" class="external">@keyframes - 1</a> <img src="./Enterprise Web Application Development using AngularJS - Solution Engineering Group - iNia_files/YouTube logo 20px h.jpg" style="width:35px;" alt=""></li>
+		<li><a href="https://www.youtube.com/watch?v=fQVu2TRCwcw" class="external">@keyframes - 2</a> <img src="./Enterprise Web Application Development using AngularJS - Solution Engineering Group - iNia_files/YouTube logo 20px h.jpg" style="width:35px;" alt=""></li>
+		<li><a href="http://www.w3schools.com/css/css3_animations.asp" class="external">animation</a></li>
+	</ol>
+	</ul>
+
+
+	<ul>
+	<li>Bootstrap 3 (Bootstrap is an open-source Javascript framework developed by the team at Twitter. It is a combination of HTML, CSS, and Javascript code designed to help build user interface components. Bootstrap was also programmed to support both HTML5 and CSS3)</li>
+	<ol>
+	<li><a href="http://www.youtube.com/watch?v=1p5Y-c2eWO8" class="external">Intro to Bootstrap and Grid System</a> <img src="./Enterprise Web Application Development using AngularJS - Solution Engineering Group - iNia_files/YouTube logo 20px h.jpg" style="width:35px;" alt=""></li>
+		<li><a href="http://www.youtube.com/watch?v=oepmLGQP1m4&index=1&list=PLUoqTnNH-2Xz_BUrjcahKWDhPcUj-FTOt" class="external">Code a Responsive Website</a> <img src="./Enterprise Web Application Development using AngularJS - Solution Engineering Group - iNia_files/YouTube logo 20px h.jpg" style="width:35px;" alt=""></li>
+	</ol>
+	</ul>
+
+
+<hr>
+
+
+	<p><img src="./Enterprise Web Application Development using AngularJS - Solution Engineering Group - iNia_files/javascript.png" style="width:25px;" alt=""> <strong>Javascript</strong></p>
+
+
+	<ul>
+	<li><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript" class="external">Intro</a></li>
+		<li>Basics</li>
+	<ol>
+	<li><a href="https://www.youtube.com/watch?v=vZBCTc9zHtI" class="external">Variable, Condition and Array</a> <img src="./Enterprise Web Application Development using AngularJS - Solution Engineering Group - iNia_files/YouTube logo 20px h.jpg" style="width:35px;" alt=""></li>
+		<li><a href="https://www.youtube.com/watch?v=_cLvpJY2deo" class="external">JS Basics - 1</a> <img src="./Enterprise Web Application Development using AngularJS - Solution Engineering Group - iNia_files/YouTube logo 20px h.jpg" style="width:35px;" alt=""></li>
+		<li><a href="https://www.youtube.com/watch?v=6wEqQvvcwyc" class="external">JS Basics - 2</a> <img src="./Enterprise Web Application Development using AngularJS - Solution Engineering Group - iNia_files/YouTube logo 20px h.jpg" style="width:35px;" alt=""></li>
+	</ol>
+	</ul>
+
+
+	<ul>
+	<li>Advanced Concepts</li>
+	<ol>
+	<li><a href="http://javascriptissexy.com/javascript-objects-in-detail/" class="external">JS Objects</a></li>
+		<li><a href="http://javascriptissexy.com/javascript-prototype-in-plain-detailed-language/" class="external">Prototype property</a></li>
+		<li><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Strict_mode" class="external">Strict mode</a></li>
+		<li><a href="https://developer.mozilla.org/en-US/docs/AJAX/Getting_Started" class="external">AJAX</a></li>
+		<li><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Guide/EventLoop#Event_loop" class="external">Event loop</a></li>
+		<li><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Guide/Closures" class="external">Closure</a></li>
+		<li><a href="http://geekswithblogs.net/shaunxu/archive/2013/12/12/bind-call-and-apply-in-javascript-function.aspx" class="external">bind(), call() and apply()</a></li>
+		<li><a href="http://javascript.info/tutorial/bubbling-and-capturing" class="external">Event bubbling and Capturing</a></li>
+		<li><a href="https://www.youtube.com/watch?v=LJZBATprXhA" class="external">Event - stopPropagation()</a> <img src="./Enterprise Web Application Development using AngularJS - Solution Engineering Group - iNia_files/YouTube logo 20px h.jpg" style="width:35px;" alt=""></li>
+	</ol>
+	</ul>
+
+
+	<ul>
+	<li>Promises</li>
+	<ol>
+	<li><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Promise" class="external">Reference 1 - Promise</a></li>
+		<li><a href="http://www.html5rocks.com/en/tutorials/es6/promises/" class="external">Reference 2 - Promise</a></li>
+		<li><a href="https://github.com/kriskowal/q/wiki/API-Reference" class="external">Kriskowal Q</a></li>
+	</ol>
+	</ul>
+
+
+	<ul>
+	<li><a href="https://www.youtube.com/watch?v=hQVTIJBZook" class="external">Javascript - the Good parts</a>  <img src="./Enterprise Web Application Development using AngularJS - Solution Engineering Group - iNia_files/YouTube logo 20px h.jpg" style="width:35px;" alt=""></li>
+		<li><a href="http://www.youtube.com/watch?v=ljNi8nS5TtQ" class="external">Javascript &amp; DOM</a> <img src="./Enterprise Web Application Development using AngularJS - Solution Engineering Group - iNia_files/YouTube logo 20px h.jpg" style="width:35px;" alt=""></li>
+		<li><a href="http://en.wikipedia.org/wiki/JSON" class="external">JSON</a></li>
+	</ul>
+
+
+<hr>
+
+
+	<ul>
+	<li><strong>Single Page Application (SPA)</strong></li>
+	</ul>
+
+
+	<ul>
+	<li><a href="http://en.wikipedia.org/wiki/Single-page_application" class="external">SPA</a></li>
+		<li><a href="http://www.johnpapa.net/pageinspa/" class="external">Shell, Page, View, SPA</a></li>
+		<li><a href="http://blogs.interfacett.com/single-page-application-spa-frameworks" class="external">SPA, Shell Page, list of frameworks</a></li>
+		<li>Compare and Contrast
+	<ul>
+	<li><a href="http://programmers.stackexchange.com/questions/144717/advantages-and-disadvantages-of-building-a-single-page-web-application" class="external">1. SPA + and -</a></li>
+		<li><a href="http://www.quora.com/Can-you-please-list-down-the-advantages-and-disadvantages-of-single-page-applications" class="external">2. SPA + and -</a></li>
+	</ul></li>
+	</ul>
+
+
+	<ul>
+	<li>MVC</li>
+	</ul>
+
+
+	<ul>
+	<li><strong>Dependency Injection</strong>
+	<ul>
+	<li><a href="https://www.youtube.com/watch?v=IKD2-MAkXyQ" class="external">What is DI?</a> <img src="./Enterprise Web Application Development using AngularJS - Solution Engineering Group - iNia_files/YouTube logo 20px h.jpg" style="width:35px;" alt=""></li>
+	</ul></li>
+	</ul>
+
+
+<hr>
+
+
+	<p><img src="./Enterprise Web Application Development using AngularJS - Solution Engineering Group - iNia_files/angularjs.png" style="width:25px;" alt=""><strong>Angular JS</strong></p>
+
+
+	<ul>
+	<li><a href="https://docs.angularjs.org/guide/introduction" class="external">What is Angular</a></li>
+		<li><a href="http://www.w3schools.com/angular/angular_expressions.asp" class="external">Angular Expressions</a></li>
+		<li><a href="https://www.youtube.com/watch?v=i9MHigUZKEM" class="external">Fundamentals in 60-ish Minutes</a> <img src="./Enterprise Web Application Development using AngularJS - Solution Engineering Group - iNia_files/YouTube logo 20px h.jpg" style="width:35px;" alt=""></li>
+		<li><a href="https://docs.angularjs.org/guide/bootstrap" class="external">Bootstrap aka Initialize angular app in plain html</a> </li>
+		<li><a href="https://docs.angularjs.org/guide/di" class="external">Dependency Injection</a></li>
+	</ul>
+
+
+	<ul>
+	<li>Forms
+	<ul>
+	<li><a href="https://docs.angularjs.org/guide/databinding" class="external">Data binding</a></li>
+		<li>What is Template , Model and View?
+	<ul>
+	<li><em>Template</em> - HTML page that has directives, html tags for UI.</li>
+		<li><em>Model</em> - Provide data to the Template and used to store data when two-way-binding occurs.</li>
+		<li><em>View</em> - Rendered template with actual data applied from Model.<br><img src="./Enterprise Web Application Development using AngularJS - Solution Engineering Group - iNia_files/angular-template-model-view.png" alt=""></li>
+	</ul>
+	</li>
+		<li><a href="https://www.youtube.com/watch?v=PxMwW1QBEro" class="external">Form Validation</a> <img src="./Enterprise Web Application Development using AngularJS - Solution Engineering Group - iNia_files/YouTube logo 20px h.jpg" style="width:35px;" alt=""></li>
+		<li><a href="https://docs.angularjs.org/api/ng#function" class="external">Angular Global Functions</a></li>
+		<li>Scope
+	<ul>
+	<li><a href="https://docs.angularjs.org/api/ng/type/$rootScope.Scope" class="external">$rootscope</a></li>
+		<li><a href="https://docs.angularjs.org/guide/scope" class="external">scope in angularjs site</a></li>
+		<li><a href="http://inia.objectfrontier.com/redmine/attachments/download/2513/Angular%20Scope.pdf" class="external">Angular Scope</a> <img src="./Enterprise Web Application Development using AngularJS - Solution Engineering Group - iNia_files/pdf-logo.jpg" style="width:20px;" alt=""></li>
+		<li><a href="https://github.com/angular/angular.js/wiki/Understanding-Scopes" class="external">Understading scopes</a></li>
+	</ul>
+	</li>
+		<li>Directives
+	<ul>
+	<li><a href="https://www.youtube.com/watch?v=WqmeI5fZcho" class="external">Writing Directives</a> <img src="./Enterprise Web Application Development using AngularJS - Solution Engineering Group - iNia_files/YouTube logo 20px h.jpg" style="width:35px;" alt=""></li>
+		<li><a href="https://egghead.io/lessons/angularjs-understanding-isolate-scope" class="external">Isolate scope with '&amp;'</a> <a href="https://egghead.io/lessons/angularjs-understanding-isolate-scope"><img src="./Enterprise Web Application Development using AngularJS - Solution Engineering Group - iNia_files/YouTube logo 20px h.jpg" style="width:35px;" alt=""></a> (Specially for invoking an method in directive - event)</li>
+		<li><a href="https://egghead.io/lessons/angularjs-isolate-scope-attribute-binding" class="external">Isolate scope with '@'</a> <a href="https://egghead.io/lessons/angularjs-isolate-scope-attribute-binding"><img src="./Enterprise Web Application Development using AngularJS - Solution Engineering Group - iNia_files/YouTube logo 20px h.jpg" style="width:35px;" alt=""></a> (Specially for passing an variable or with expression {{var }})</li>
+		<li><a href="https://egghead.io/lessons/angularjs-isolate-scope-two-way-binding" class="external">Isolate scope with '='</a> <a href="https://egghead.io/lessons/angularjs-isolate-scope-two-way-binding"><img src="./Enterprise Web Application Development using AngularJS - Solution Engineering Group - iNia_files/YouTube logo 20px h.jpg" style="width:35px;" alt=""></a> (Specially for passing an object)</li>
+		<li><a href="https://egghead.io/lessons/angularjs-scope-vs-scope" class="external">$scope vs scope</a> <a href="https://egghead.io/lessons/angularjs-scope-vs-scope"><img src="./Enterprise Web Application Development using AngularJS - Solution Engineering Group - iNia_files/YouTube logo 20px h.jpg" style="width:35px;" alt=""></a></li>
+		<li><a href="http://inia.objectfrontier.com/redmine/attachments/download/2520/Angular%20Custom%20Directives.pdf" class="external">Directives Explained</a> <img src="./Enterprise Web Application Development using AngularJS - Solution Engineering Group - iNia_files/pdf-logo.jpg" style="width:20px;" alt=""></li>
+		<li><a href="https://thinkster.io/egghead/directive-to-directive-communication/" class="external">Directive to Directive Communication</a> <a href="https://thinkster.io/egghead/directive-to-directive-communication/"><img src="./Enterprise Web Application Development using AngularJS - Solution Engineering Group - iNia_files/YouTube logo 20px h.jpg" style="width:35px;" alt=""></a></li>
+	</ul>
+	</li>
+		<li>Routing
+	<ul>
+	<li><a href="https://www.youtube.com/watch?v=5uhZCc0j9RY" class="external">ng-route</a> <img src="./Enterprise Web Application Development using AngularJS - Solution Engineering Group - iNia_files/YouTube logo 20px h.jpg" style="width:35px;" alt=""></li>
+		<li><a href="https://www.youtube.com/watch?v=uYGzj7BTT2c" class="external">Hashbang mode vs html 5 mode</a> <img src="./Enterprise Web Application Development using AngularJS - Solution Engineering Group - iNia_files/YouTube logo 20px h.jpg" style="width:35px;" alt=""></li>
+		<li><a href="https://docs.angularjs.org/api/ngRoute/provider/$routeProvider" class="external">$routeProvider</a> </li>
+		<li><a href="http://stackoverflow.com/questions/21023763/difference-between-angular-route-and-angular-ui-router" class="external">UI-Router vs ng-router</a> (Refer <a href="http://angular-ui.github.io/ui-router/site/#/api/ui.router" class="external">UI-Router</a>)</li>
+	</ul>
+	</li>
+		<li>Events
+	<ul>
+	<li><a href="https://www.youtube.com/watch?v=JLG6bRBUfnQ" class="external">Angular client side events</a> <img src="./Enterprise Web Application Development using AngularJS - Solution Engineering Group - iNia_files/YouTube logo 20px h.jpg" style="width:35px;" alt="">  (Refer: for more events -ref </li>
+		<li><a href="http://stackoverflow.com/questions/15193539/whats-the-best-way-to-cancel-event-propagation-between-nested-ng-click-calls" class="external">Stop Propagation</a> (Pre-requisite: Javascript- Advanced Concepts-Event - stopPropagation())</li>
+		<li>Broadcast/emit
+	<ul>
+	<li><a href="http://toddmotto.com/all-about-angulars-emit-broadcast-on-publish-subscribing/" class="external">Understanding Angular’s $scope and $rootScope event system $emit, $broadcast and $on</a></li>
+		<li><a href="https://www.youtube.com/watch?v=1OALSkJGsRw" class="external">Communicating between controllers using $broadcast.</a> <img src="./Enterprise Web Application Development using AngularJS - Solution Engineering Group - iNia_files/YouTube logo 20px h.jpg" style="width:35px;" alt=""></li>
+		<li><a href="https://www.youtube.com/watch?v=mMxQHmvQ1pA" class="external">Show loading indicator using $emit</a> <img src="./Enterprise Web Application Development using AngularJS - Solution Engineering Group - iNia_files/YouTube logo 20px h.jpg" style="width:35px;" alt=""></li>
+	</ul>
+	</li>
+	</ul>
+	</li>
+		<li>Filters
+	<ul>
+	<li><a href="https://docs.angularjs.org/guide/filter" class="external">Filter in angular js site</a> </li>
+		<li><a href="https://www.youtube.com/watch?v=D4NyA-SFnZg" class="external">Built in Filters</a> <img src="./Enterprise Web Application Development using AngularJS - Solution Engineering Group - iNia_files/YouTube logo 20px h.jpg" style="width:35px;" alt=""></li>
+		<li>Custom Filters
+	<ul>
+	<li><a href="https://www.youtube.com/watch?v=XYYi2x19ZTg" class="external">Build Filters</a> <img src="./Enterprise Web Application Development using AngularJS - Solution Engineering Group - iNia_files/YouTube logo 20px h.jpg" style="width:35px;" alt=""></li>
+		<li> <a href="https://www.youtube.com/watch?v=WDioBYD0VAs" class="external">Own custom filters</a> <img src="./Enterprise Web Application Development using AngularJS - Solution Engineering Group - iNia_files/YouTube logo 20px h.jpg" style="width:35px;" alt=""></li>
+	</ul></li>
+	</ul></li>
+	</ul></li>
+	</ul>
+
+
+	<ul>
+	<li>Controllers
+	<ul>
+	<li><a href="http://www.youtube.com/watch?v=MEmC0QH8ATQ" class="external">Basic</a> <a href="http://www.youtube.com/watch?v=MEmC0QH8ATQ"><img src="./Enterprise Web Application Development using AngularJS - Solution Engineering Group - iNia_files/YouTube logo 20px h.jpg" style="width:35px;" alt=""></a></li>
+		<li><a href="https://docs.angularjs.org/api/ng/directive/ngController" class="external">ngController</a></li>
+	</ul></li>
+	</ul>
+
+
+	<ul>
+	<li>Service, Value, Factory and Providers
+	<ul>
+	<li><a href="https://www.youtube.com/watch?v=4ovXYLGFtc4" class="external">Value, Factory</a> <img src="./Enterprise Web Application Development using AngularJS - Solution Engineering Group - iNia_files/YouTube logo 20px h.jpg" style="width:35px;" alt=""></li>
+		<li><a href="https://www.youtube.com/watch?v=HvTZbQ_hUZY" class="external">Providers</a> <a href="https://www.youtube.com/watch?v=HvTZbQ_hUZY"><img src="./Enterprise Web Application Development using AngularJS - Solution Engineering Group - iNia_files/YouTube logo 20px h.jpg" style="width:35px;" alt=""></a></li>
+		<li><a href="https://www.youtube.com/watch?v=A6cJasNBkyI" class="external">Writing Service vs Factory vs provider</a> <img src="./Enterprise Web Application Development using AngularJS - Solution Engineering Group - iNia_files/YouTube logo 20px h.jpg" style="width:35px;" alt=""></li>
+	</ul></li>
+	</ul>
+
+
+	<ul>
+	<li>Promises
+	<ul>
+	<li><a href="https://www.youtube.com/watch?v=cdG_T6ufcbE" class="external">$q</a> <img src="./Enterprise Web Application Development using AngularJS - Solution Engineering Group - iNia_files/YouTube logo 20px h.jpg" style="width:35px;" alt=""></li>
+		<li><a href="https://docs.angularjs.org/api/ng/service/$q" class="external">$q in angular site</a> (Really good)</li>
+	</ul>
+	</li>
+		<li><a href="http://angular-ui.github.io/bootstrap/" title="bootstrap" class="external">angular-ui</a></li>
+	</ul>
+
+
+	<ul>
+	<li>Testing
+	<ul>
+	<li><a href="http://blog.codeship.io/2013/04/22/from-tdd-to-bdd.html" class="external">BDD - Behavioural Driven Development</a></li>
+		<li><a href="https://docs.angularjs.org/guide/e2e-testing" class="external">e2e</a></li>
+		<li><a href="http://www.ng-newsletter.com/posts/practical-protractor.html" class="external">ng-newsletter e2e</a></li>
+		<li><a href="http://www.ng-newsletter.com/advent2013/#!/day/19" class="external">ng-newsletter Karma</a></li>
+		<li><a href="https://www.youtube.com/watch?v=aQipuiTcn3U" class="external">End to End testing with Protractor</a> <img src="./Enterprise Web Application Development using AngularJS - Solution Engineering Group - iNia_files/YouTube logo 20px h.jpg" style="width:35px;" alt=""></li>
+	</ul></li>
+	</ul>
+
+
+	<ul>
+	<li><a href="https://www.youtube.com/watch?v=ZhfUv0spHCY" class="external">Best-Practices</a> <img src="./Enterprise Web Application Development using AngularJS - Solution Engineering Group - iNia_files/YouTube logo 20px h.jpg" style="width:35px;" alt=""></li>
+		<li><a href="http://www.youtube.com/watch?v=mPlCEKknzVU" class="external">ng-animate</a> <img src="./Enterprise Web Application Development using AngularJS - Solution Engineering Group - iNia_files/YouTube logo 20px h.jpg" style="width:35px;" alt=""></li>
+	</ul>
+
+
+	<ul>
+	<li>State Management
+	<ul>
+	<li>What is state</li>
+		<li>State maintenance</li>
+	</ul></li>
+	</ul>
+
+
+	<ul>
+	<li>Separation of concerns
+	<ul>
+	<li>3rd party libs</li>
+	</ul></li>
+	</ul>
+
+
+	<ul>
+	<li>Other Concerns
+	<ul>
+	<li>Build ( Pre-requiste to know NPM and basic node require(""))
+	<ul>
+	<li>Grunt
+	<ul>
+	<li><a href="https://www.youtube.com/watch?v=q3Sqljpr-Vc" class="external">Basics</a> <a href="https://www.youtube.com/watch?v=q3Sqljpr-Vc"><img src="./Enterprise Web Application Development using AngularJS - Solution Engineering Group - iNia_files/YouTube logo 20px h.jpg" style="width:35px;" alt=""></a></li>
+		<li><a href="http://gruntjs.com/getting-started" class="external">All about Grunt</a></li>
+	</ul>
+	</li>
+		<li>Gulp
+	<ul>
+	<li></li>
+	</ul>
+	</li>
+	</ul>
+	</li>
+		<li>Packaging
+	<ul>
+	<li><a href="http://www.youtube.com/watch?v=Vs2wduoN9Ws" class="external">bower</a> <a href="http://www.youtube.com/watch?v=Vs2wduoN9Ws"><img src="./Enterprise Web Application Development using AngularJS - Solution Engineering Group - iNia_files/YouTube logo 20px h.jpg" style="width:35px;" alt=""></a></li>
+		<li><a href="http://code.tutsplus.com/tutorials/meet-bower-a-package-manager-for-the-web--net-27774" class="external">Meet bower</a> </li>
+		<li><a href="http://bower.io/" class="external">For more reference , here is the bower site</a></li>
+		<li><a href="http://bower.io/docs/config/" class="external">bower.json - bower config</a></li>
+	</ul>
+	</li>
+		<li>Minification
+	<ul>
+	<li><a href="http://www.programmerinterview.com/index.php/javascript/what-is-javascript-minification/" class="external">What is minification</a></li>
+		<li><a href="https://thinkster.io/egghead/ngmin/" class="external">ng-min</a> </li>
+		<li><a href="https://www.npmjs.org/package/grunt-ngmin" class="external">grunt-ngmin</a></li>
+		<li><a href="https://www.npmjs.org/package/gulp-ngmin" class="external">gulp-ngmin</a></li>
+	</ul>
+	</li>
+		<li>Dependency management</li>
+		<li>Layering 
+	<ul>
+	<li><a href="http://www.youtube.com/watch?v=rqdRXqeqgZs" class="external">yeoman-angularjs</a> <img src="./Enterprise Web Application Development using AngularJS - Solution Engineering Group - iNia_files/YouTube logo 20px h.jpg" style="width:35px;" alt=""></li>
+		<li><a href="https://github.com/angular/angular-seed" class="external">angular-seed</a> (This is just to give an idea about angular-seed, Angular team is suggesting yeoman).</li>
+	</ul>
+	</li>
+		<li>Debugging</li>
+		<li>Externalization of properties
+	<ul>
+	<li> Environment</li>
+	</ul>
+	</li>
+		<li>Security</li>
+		<li>Logging</li>
+		<li>Exception/error handling</li>
+		<li>Alerts and messaging</li>
+		<li>Localization</li>
+	</ul></li>
+	</ul>
+
+
+	<p><i>END</i></p>
+</div>
+
+
+<div class="attachments">
+<p><a href="./Enterprise Web Application Development using AngularJS - Solution Engineering Group - iNia_files/HTML5.png" class="icon icon-attachment">HTML5.png</a>   - html 5 logo
+  <span class="size">(4.05 KB)</span>
+    <span class="author">Shah Mohamed Nattar Shah, 07 Oct 2014 01:41 AM</span>
+  </p>
+<p><a href="./Enterprise Web Application Development using AngularJS - Solution Engineering Group - iNia_files/css3.jpg" class="icon icon-attachment">css3.jpg</a>  
+  <span class="size">(13.4 KB)</span>
+    <span class="author">Shah Mohamed Nattar Shah, 07 Oct 2014 02:00 AM</span>
+  </p>
+<p><a href="./Enterprise Web Application Development using AngularJS - Solution Engineering Group - iNia_files/javascript.png" class="icon icon-attachment">javascript.png</a>   - js logo
+  <span class="size">(4.5 KB)</span>
+    <span class="author">Shah Mohamed Nattar Shah, 07 Oct 2014 02:03 AM</span>
+  </p>
+<p><a href="./Enterprise Web Application Development using AngularJS - Solution Engineering Group - iNia_files/angularjs.png" class="icon icon-attachment">angularjs.png</a>   - angularjs-logo
+  <span class="size">(13.8 KB)</span>
+    <span class="author">Shah Mohamed Nattar Shah, 07 Oct 2014 02:05 AM</span>
+  </p>
+<p><a href="./Enterprise Web Application Development using AngularJS - Solution Engineering Group - iNia_files/browser-logo.png" class="icon icon-attachment">browser-logo.png</a>  
+  <span class="size">(179 KB)</span>
+    <span class="author">Shah Mohamed Nattar Shah, 07 Oct 2014 08:34 PM</span>
+  </p>
+<p><a href="http://inia.objectfrontier.com/redmine/attachments/download/2331/youtube_icon.png" class="icon icon-attachment">youtube_icon.png</a>  
+  <span class="size">(10 KB)</span>
+    <span class="author">Shah Mohamed Nattar Shah, 07 Oct 2014 09:35 PM</span>
+  </p>
+<p><a href="./Enterprise Web Application Development using AngularJS - Solution Engineering Group - iNia_files/YouTube logo 20px h.jpg" class="icon icon-attachment">YouTube logo 20px h.jpg</a>  
+  <span class="size">(12.4 KB)</span>
+    <span class="author">Shah Mohamed Nattar Shah, 08 Oct 2014 09:07 PM</span>
+  </p>
+<p><a href="http://inia.objectfrontier.com/redmine/attachments/download/2513/Angular%20Scope.pdf" class="icon icon-attachment">Angular Scope.pdf</a>   - Angular scopes
+  <span class="size">(122 KB)</span>
+    <a href="http://inia.objectfrontier.com/redmine/attachments/2513/Angular%20Scope.pdf" class="pdf" rel="attachments" title="Angular Scope.pdf-Angular scopes"><img alt="Preview" src="./Enterprise Web Application Development using AngularJS - Solution Engineering Group - iNia_files/preview.png"></a>
+    <span class="author">Shah Mohamed Nattar Shah, 14 Oct 2014 09:30 PM</span>
+  </p>
+<p><a href="./Enterprise Web Application Development using AngularJS - Solution Engineering Group - iNia_files/pdf-logo.jpg" class="icon icon-attachment">pdf-logo.jpg</a>  
+  <span class="size">(9.31 KB)</span>
+    <span class="author">Shah Mohamed Nattar Shah, 14 Oct 2014 11:24 PM</span>
+  </p>
+<p><a href="http://inia.objectfrontier.com/redmine/attachments/download/2517/minion-underconstruction.jpg" class="icon icon-attachment">minion-underconstruction.jpg</a>  
+  <span class="size">(7.57 KB)</span>
+    <span class="author">Shah Mohamed Nattar Shah, 15 Oct 2014 12:45 AM</span>
+  </p>
+<p><a href="./Enterprise Web Application Development using AngularJS - Solution Engineering Group - iNia_files/angular-template-model-view.png" class="icon icon-attachment">angular-template-model-view.png</a>  
+  <span class="size">(116 KB)</span>
+    <span class="author">Shah Mohamed Nattar Shah, 15 Oct 2014 06:10 AM</span>
+  </p>
+<p><a href="http://inia.objectfrontier.com/redmine/attachments/download/2520/Angular%20Custom%20Directives.pdf" class="icon icon-attachment">Angular Custom Directives.pdf</a>  
+  <span class="size">(593 KB)</span>
+    <a href="http://inia.objectfrontier.com/redmine/attachments/2520/Angular%20Custom%20Directives.pdf" class="pdf" rel="attachments" title="Angular Custom Directives.pdf"><img alt="Preview" src="./Enterprise Web Application Development using AngularJS - Solution Engineering Group - iNia_files/preview.png"></a>
+    <span class="author">Shah Mohamed Nattar Shah, 15 Oct 2014 07:16 AM</span>
+  </p>
+	  <div class="images">
+	      <a href="./Enterprise Web Application Development using AngularJS - Solution Engineering Group - iNia_files/HTML5(1).png" class="lightbox" rel="attachments" title="HTML5.png-html 5 logo"><img alt="Html5" src="./Enterprise Web Application Development using AngularJS - Solution Engineering Group - iNia_files/HTML5(1).png" width="180"></a>
+	      <a href="./Enterprise Web Application Development using AngularJS - Solution Engineering Group - iNia_files/css3(1).jpg" class="lightbox" rel="attachments" title="css3.jpg"><img alt="Css3" src="./Enterprise Web Application Development using AngularJS - Solution Engineering Group - iNia_files/css3(1).jpg" width="180"></a>
+	      <a href="./Enterprise Web Application Development using AngularJS - Solution Engineering Group - iNia_files/javascript(1).png" class="lightbox" rel="attachments" title="javascript.png-js logo"><img alt="Javascript" src="./Enterprise Web Application Development using AngularJS - Solution Engineering Group - iNia_files/javascript(1).png" width="180"></a>
+	      <a href="./Enterprise Web Application Development using AngularJS - Solution Engineering Group - iNia_files/angularjs(1).png" class="lightbox" rel="attachments" title="angularjs.png-angularjs-logo"><img alt="Angularjs" src="./Enterprise Web Application Development using AngularJS - Solution Engineering Group - iNia_files/angularjs(1).png" width="180"></a>
+	      <a href="./Enterprise Web Application Development using AngularJS - Solution Engineering Group - iNia_files/browser-logo(1).png" class="lightbox" rel="attachments" title="browser-logo.png"><img alt="Browser-logo" src="./Enterprise Web Application Development using AngularJS - Solution Engineering Group - iNia_files/browser-logo(1).png" width="180"></a>
+	      <a href="./Enterprise Web Application Development using AngularJS - Solution Engineering Group - iNia_files/youtube_icon.png" class="lightbox" rel="attachments" title="youtube_icon.png"><img alt="Youtube_icon" src="./Enterprise Web Application Development using AngularJS - Solution Engineering Group - iNia_files/youtube_icon.png" width="180"></a>
+	      <a href="./Enterprise Web Application Development using AngularJS - Solution Engineering Group - iNia_files/YouTube logo 20px h(1).jpg" class="lightbox" rel="attachments" title="YouTube logo 20px h.jpg"><img alt="Youtube%20logo%2020px%20h" src="./Enterprise Web Application Development using AngularJS - Solution Engineering Group - iNia_files/YouTube logo 20px h(1).jpg" width="180"></a>
+	      <a href="./Enterprise Web Application Development using AngularJS - Solution Engineering Group - iNia_files/pdf-logo(1).jpg" class="lightbox" rel="attachments" title="pdf-logo.jpg"><img alt="Pdf-logo" src="./Enterprise Web Application Development using AngularJS - Solution Engineering Group - iNia_files/pdf-logo(1).jpg" width="180"></a>
+	      <a href="./Enterprise Web Application Development using AngularJS - Solution Engineering Group - iNia_files/minion-underconstruction.jpg" class="lightbox" rel="attachments" title="minion-underconstruction.jpg"><img alt="Minion-underconstruction" src="./Enterprise Web Application Development using AngularJS - Solution Engineering Group - iNia_files/minion-underconstruction.jpg" width="180"></a>
+	      <a href="./Enterprise Web Application Development using AngularJS - Solution Engineering Group - iNia_files/angular-template-model-view(1).png" class="lightbox" rel="attachments" title="angular-template-model-view.png"><img alt="Angular-template-model-view" src="./Enterprise Web Application Development using AngularJS - Solution Engineering Group - iNia_files/angular-template-model-view(1).png" width="180"></a>
+	  </div>
+
+</div>
+
+
+
+<div id="wiki_add_attachment">
+<p><a href="./Enterprise Web Application Development using AngularJS - Solution Engineering Group - iNia_files/Enterprise Web Application Development using AngularJS - Solution Engineering Group - iNia.html" id="attach_files_link" onclick="$(&#39;#add_attachment_form&#39;).show(); return false;">New file</a></p>
+<form accept-charset="UTF-8" action="http://inia.objectfrontier.com/redmine/projects/engineering/wiki/Enterprise_Web_Application_Development_using_AngularJS/add_attachment" enctype="multipart/form-data" id="add_attachment_form" method="post" style="display:none;"><div style="margin:0;padding:0;display:inline"><input name="utf8" type="hidden" value="✓"><input name="authenticity_token" type="hidden" value="08FcSL6U01xeZXAcLDWlkapOWvHXdjJsd3DDdEq4lHE="></div>
+  <div class="box">
+  <p><span id="attachments_fields">
+</span>
+<span class="add_attachment">
+<input class="file_selector" data-description-placeholder="Optional description" data-max-concurrent-uploads="2" data-max-file-size-message="This file cannot be uploaded because it exceeds the maximum allowed file size (5 MB)" data-max-file-size="5242880" data-upload-path="/redmine/uploads.js" multiple="multiple" name="attachments[dummy][file]" onchange="addInputFiles(this);" type="file">
+(Maximum size: 5 MB)
+</span><span id="cbp_images_form">
+  <span id="cbp_image_fields"></span>
+  <span class="add_attachment"><a class="add_attachment" href="http://inia.objectfrontier.com/redmine/projects/engineering/wiki/Enterprise_Web_Application_Development_using_AngularJS#" onclick="cbImagePaste.showPasteDialog(); return false;; return false;">Add picture from clipboard</a>
+  (Maximum size: 5 MB)</span>
+</span>
+
+</p>
+  </div>
+<input name="commit" type="submit" value="Add">
+<a href="./Enterprise Web Application Development using AngularJS - Solution Engineering Group - iNia_files/Enterprise Web Application Development using AngularJS - Solution Engineering Group - iNia.html" onclick="$(&#39;#add_attachment_form&#39;).hide(); return false;">Cancel</a>
+</form></div>
+
+
+
+
+        
+        <div style="clear:both;"></div>
+    </div>
+</div>
+</div>
+
+<div id="ajax-indicator" style="display:none;"><span>Loading...</span></div>
+<div id="ajax-modal" style="display:none;"></div>
+
+<div id="footer">
+  <div class="bgl"><div class="bgr">
+    Powered by <a href="http://bitnami.com/stack/redmine">BitNami Redmine Stack</a> © 2006-2013 Jean-Philippe Lang
+  </div></div>
+</div>
+</div>
+</div>
+
+
+
+<!-- input field span inspired by redmine/app/views/attachments/_form.html.erb -->
+
+
+<!-- clipboard paste dialog -->
+<div id="cbp_paste_dlg" title="Add picture from clipboard" style="display:none">
+  <script type="text/javascript">
+    // translated labels go here (inside namespace)
+    (function(cbImagePaste, $, undefined) {
+      cbImagePaste.cbp_txt_crop_box        = "crop box:  x={1}  y={2}  width={3}  height={4}";
+      cbImagePaste.cbp_txt_print           = "Use PrintScreen key and then Ctrl+V.";
+      cbImagePaste.cbp_txt_select          = "Use mouse to select specific part of the image.";
+      cbImagePaste.cbp_txt_deselect        = "Click outside selection to deselect.";
+      cbImagePaste.cbp_txt_empty_cb        = "The clipboard is empty. Try PrintScreen key again.";
+      cbImagePaste.cbp_txt_no_image_cb     = "No image found in the clipboard. Try PrintScreen key again.";
+      cbImagePaste.cbp_txt_no_image_pst    = "No image has been pasted yet. Insert some first.";
+      cbImagePaste.cbp_txt_too_many_files  = "Cannot add another attachment. Number of file attachments allowed for one update is limited to 10.";
+      cbImagePaste.cbp_txt_wrong_browser   = "Your current browser cannot paste pictures. Please use Mozilla Firefox ver. >= 5 or Google Chrome ver. >= 13.";
+      cbImagePaste.cbp_txt_btn_ok          = "Ok";
+      cbImagePaste.cbp_txt_btn_cancel      = "Cancel";
+      cbImagePaste.cbp_txt_too_big_image   = "This file cannot be uploaded because it exceeds the maximum allowed file size (5 MB)";
+      cbImagePaste.cbp_max_attach_size     = 5242880;
+      cbImagePaste.cbp_max_attachments     = 10;
+      cbImagePaste.cbp_min_chrome_ver      = 535;
+      cbImagePaste.cbp_min_firefox_ver     = 5;
+      cbImagePaste.cbp_act_update_id       = 427;
+    }(window.cbImagePaste = window.cbImagePaste || {}, j$cbp));
+  </script>
+
+  <div id="cbp_header_box">
+    <!-- canvas id="cbp_thumbnail" width="60" height="60"></canvas -->
+    <div id="cbp_instructions">&nbsp;</div>
+  </div>
+  <div id="cbp_panel_box">
+    <!-- place for pasted image editor -->
+  </div>
+</div>
+
+<!-- dialog to copy image link for wiki -->
+<div id="cbp_link_dlg" title="Copy image and thumbnail link" style="display:none">
+  <input type="text" id="cbp_image_link" readonly="">
+  <p>
+  <input type="text" id="cbp_thumbnail_link" readonly="">
+</p></div>
+
+
+
+<div id="fancybox-tmp"></div><div id="fancybox-loading"><div></div></div><div id="fancybox-overlay"></div><div id="fancybox-wrap"><div id="fancybox-outer"><div class="fancybox-bg" id="fancybox-bg-n"></div><div class="fancybox-bg" id="fancybox-bg-ne"></div><div class="fancybox-bg" id="fancybox-bg-e"></div><div class="fancybox-bg" id="fancybox-bg-se"></div><div class="fancybox-bg" id="fancybox-bg-s"></div><div class="fancybox-bg" id="fancybox-bg-sw"></div><div class="fancybox-bg" id="fancybox-bg-w"></div><div class="fancybox-bg" id="fancybox-bg-nw"></div><div id="fancybox-content"></div><a id="fancybox-close"></a><div id="fancybox-title"></div><a href="javascript:;" id="fancybox-left"><span class="fancy-ico" id="fancybox-left-ico"></span></a><a href="javascript:;" id="fancybox-right"><span class="fancy-ico" id="fancybox-right-ico"></span></a></div></div></body></html>

@@ -1,0 +1,1600 @@
+<!DOCTYPE html>
+<!-- saved from url=(0073)http://inia.objectfrontier.com/redmine/projects/engineering/wiki/_MongoDB -->
+<html lang="en"><head><meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+<meta charset="utf-8">
+<title> MongoDB - Solution Engineering Group - iNia</title>
+<meta name="description" content="Redmine">
+<meta name="keywords" content="issue,bug,tracker">
+<meta content="authenticity_token" name="csrf-param">
+<meta content="d1h+VofSOuzc6yYIIB1Q7PaU3UvpE387aNwrkJRMKZQ=" name="csrf-token">
+<link rel="shortcut icon" href="http://inia.objectfrontier.com/redmine/favicon.ico?1385196105">
+<link href="./MongoDB - Solution Engineering Group - iNia_files/jquery-ui-1.9.2.css" media="all" rel="stylesheet" type="text/css">
+<link href="./MongoDB - Solution Engineering Group - iNia_files/application.css" media="all" rel="stylesheet" type="text/css">
+
+<script src="./MongoDB - Solution Engineering Group - iNia_files/jquery-1.8.3-ui-1.9.2-ujs-2.0.3.js" type="text/javascript"></script>
+<script src="./MongoDB - Solution Engineering Group - iNia_files/application.js" type="text/javascript"></script>
+<script type="text/javascript">
+//<![CDATA[
+$(window).load(function(){ warnLeavingUnsaved('The current page contains unsaved text that will be lost if you leave this page.'); });
+//]]>
+</script>
+
+
+<script src="./MongoDB - Solution Engineering Group - iNia_files/redmine_dmsf.js" type="text/javascript"></script>
+<link href="./MongoDB - Solution Engineering Group - iNia_files/dmsf.css" media="screen" rel="stylesheet" type="text/css"> <link href="./MongoDB - Solution Engineering Group - iNia_files/jquery.fancybox-1.3.4.css" media="screen" rel="stylesheet" type="text/css"><link href="./MongoDB - Solution Engineering Group - iNia_files/lightbox.css" media="screen" rel="stylesheet" type="text/css"><script src="./MongoDB - Solution Engineering Group - iNia_files/jquery.fancybox-1.3.4.pack.js" type="text/javascript"></script><script src="./MongoDB - Solution Engineering Group - iNia_files/jquery.easing-1.3.pack.js" type="text/javascript"></script><script src="./MongoDB - Solution Engineering Group - iNia_files/lightbox.js" type="text/javascript"></script> <script type="text/javascript">
+	if(!window.jQuery) {
+	    var script = document.createElement('script');
+	    script.src = '/plugin_assets/redmine_mention_plugin/javascripts/lib/jquery.min.js';
+	    script.type = 'text/javascript';
+	    document.getElementsByTagName('body')[0].appendChild(script);
+	}
+</script>
+<script src="./MongoDB - Solution Engineering Group - iNia_files/underscore-min.js" type="text/javascript"></script>
+<script src="./MongoDB - Solution Engineering Group - iNia_files/jquery.elastic.js" type="text/javascript"></script>
+<script src="./MongoDB - Solution Engineering Group - iNia_files/jquery.events.input.js" type="text/javascript"></script>
+<script src="./MongoDB - Solution Engineering Group - iNia_files/jquery.mentionsInput.js" type="text/javascript"></script>
+<script src="./MongoDB - Solution Engineering Group - iNia_files/redmine-mention.js" type="text/javascript"></script>
+<link href="./MongoDB - Solution Engineering Group - iNia_files/jquery.mentionsInput.css" media="screen" rel="stylesheet" type="text/css"> <script src="./MongoDB - Solution Engineering Group - iNia_files/wkstatus.js" type="text/javascript"></script>
+<link href="./MongoDB - Solution Engineering Group - iNia_files/lockwarning.css" media="screen" rel="stylesheet" type="text/css"> <link href="./MongoDB - Solution Engineering Group - iNia_files/jquery.Jcrop-0.9.10.min.css" media="all" rel="stylesheet" type="text/css">
+<link href="./MongoDB - Solution Engineering Group - iNia_files/clipboard_image_paste.css" media="all" rel="stylesheet" type="text/css">
+<script src="./MongoDB - Solution Engineering Group - iNia_files/jcrop-0.9.10.min.js" type="text/javascript"></script>
+<script src="./MongoDB - Solution Engineering Group - iNia_files/clipboard_image_paste.js" type="text/javascript"></script>
+  <script type="text/javascript">
+    var j$cbp = $;
+  </script>
+
+<!-- page specific tags -->
+  <script src="./MongoDB - Solution Engineering Group - iNia_files/attachments.js" type="text/javascript"></script>
+</head>
+<body class="theme-Alternate project-engineering controller-wiki action-show">
+<div id="wrapper">
+<div id="wrapper2">
+<div id="wrapper3">
+<div id="top-menu">
+    <div id="account">
+        <ul><li><a href="http://inia.objectfrontier.com/redmine/my/account" class="my-account">My account</a></li>
+<li><a href="http://inia.objectfrontier.com/redmine/logout" class="logout" data-method="post" rel="nofollow">Sign out</a></li></ul>    </div>
+    <div id="loggedas">Logged in as <a href="http://inia.objectfrontier.com/redmine/users/579" class="user active">sunilm</a></div>
+    <ul><li><a href="http://inia.objectfrontier.com/redmine/" class="home">Home</a></li>
+<li><a href="http://inia.objectfrontier.com/redmine/my/page" class="my-page">My page</a></li>
+<li><a href="http://inia.objectfrontier.com/redmine/projects" class="projects">Projects</a></li>
+<li><a href="http://inia.objectfrontier.com/redmine/wktime/index" class="wkTime">Time &amp; Expense</a></li>
+<li><a href="http://www.redmine.org/guide" class="help">Help</a></li></ul></div>
+
+<div id="header">
+    <div id="quick-search">
+        <form accept-charset="UTF-8" action="http://inia.objectfrontier.com/redmine/projects/engineering/search" method="get"><div style="margin:0;padding:0;display:inline"><input name="utf8" type="hidden" value="✓"></div>
+        <input name="wiki_pages" type="hidden" value="1">
+        <label for="q">
+          <a href="http://inia.objectfrontier.com/redmine/projects/engineering/search" accesskey="4">Search</a>:
+        </label>
+        <input accesskey="f" class="small" id="q" name="q" size="20" type="text">
+</form>        <select id="project_quick_jump_box" name="project_quick_jump_box" onchange="if (this.value != &#39;&#39;) { window.location = this.value; }"><option value="">Jump to a project...</option><option value="" disabled="disabled">---</option><option selected="selected" value="/redmine/projects/engineering?jump=wiki">Solution Engineering Group</option><option value="/redmine/projects/mean-stack-nov-14?jump=wiki">MEAN Stack Nov-14</option></select>
+    </div>
+
+    <h1>Solution Engineering Group</h1>
+
+    <div id="main-menu">
+        <ul><li><a href="http://inia.objectfrontier.com/redmine/projects/engineering" class="overview">Overview</a></li>
+<li><a href="http://inia.objectfrontier.com/redmine/projects/engineering/activity" class="activity">Activity</a></li>
+<li><a href="http://inia.objectfrontier.com/redmine/adtasks/list?project_id=engineering" class="adtasks">Tasks</a></li>
+<li><a href="http://inia.objectfrontier.com/redmine/adsprints/list?project_id=engineering" class="adsprints">Sprints</a></li>
+<li><a href="http://inia.objectfrontier.com/redmine/adburndown/show?project_id=engineering" class="adburndown">Run charts</a></li>
+<li><a href="http://inia.objectfrontier.com/redmine/projects/engineering/roadmap" class="roadmap">Roadmap</a></li>
+<li><a href="http://inia.objectfrontier.com/redmine/projects/engineering/issues" class="issues">Issues</a></li>
+<li><a href="http://inia.objectfrontier.com/redmine/projects/engineering/issues/new" accesskey="7" class="new-issue">New issue</a></li>
+<li><a href="http://inia.objectfrontier.com/redmine/projects/engineering/issues/gantt" class="gantt">Gantt</a></li>
+<li><a href="http://inia.objectfrontier.com/redmine/projects/engineering/issues/calendar" class="calendar">Calendar</a></li>
+<li><a href="http://inia.objectfrontier.com/redmine/projects/engineering/news" class="news">News</a></li>
+<li><a href="http://inia.objectfrontier.com/redmine/projects/engineering/dmsf" class="dmsf">DMSF</a></li>
+<li><a href="http://inia.objectfrontier.com/redmine/projects/engineering/wiki" class="wiki selected">Wiki</a></li>
+<li><a href="http://inia.objectfrontier.com/redmine/projects/engineering/settings" class="settings">Settings</a></li></ul>
+    </div>
+</div>
+
+<div id="main" class="">
+    <div id="sidebar">
+          
+<h3>Wiki</h3>
+<ul>
+  <li><a href="http://inia.objectfrontier.com/redmine/projects/engineering/wiki">Start page</a></li>
+  <li><a href="http://inia.objectfrontier.com/redmine/projects/engineering/wiki/index">Index by title</a></li>
+  <li><a href="http://inia.objectfrontier.com/redmine/projects/engineering/wiki/date_index">Index by date</a></li>
+</ul>
+
+
+        
+    </div>
+
+    <div id="content">
+        
+        <div class="contextual">
+  <a href="http://inia.objectfrontier.com/redmine/projects/engineering/wiki/_MongoDB/edit" accesskey="e" class="icon icon-edit">Edit</a>
+  <a href="http://inia.objectfrontier.com/redmine/watchers/watch?object_id=94&object_type=wiki_page" class="wiki_page-94-watcher icon icon-fav-off" data-method="post" data-remote="true" rel="nofollow">Watch</a>
+  
+  
+  
+  
+<a href="http://inia.objectfrontier.com/redmine/projects/engineering/wiki/_MongoDB/history" class="icon icon-history">History</a>
+</div>
+
+<p class="breadcrumb"><a href="http://inia.objectfrontier.com/redmine/projects/engineering/wiki/Wiki">Wiki</a> » </p>
+
+
+<div class="wiki wiki-page">
+  <a name="MongoDB-Tutorials-and-Resources"></a>
+<h1> MongoDB Tutorials and Resources<a href="http://inia.objectfrontier.com/redmine/projects/engineering/wiki/_MongoDB#MongoDB-Tutorials-and-Resources" class="wiki-anchor">¶</a></h1>
+
+
+<hr>
+
+
+	<div class="contextual" id="section-2" title="Edit this section"><a href="http://inia.objectfrontier.com/redmine/projects/engineering/wiki/_MongoDB/edit?section=2"><img alt="Edit" src="./MongoDB - Solution Engineering Group - iNia_files/edit.png"></a></div><a name="M101JS-MongoDB-For-NodeJS-Developers"></a>
+<h2><a href="https://university.mongodb.com/courses/M101JS/about" class="external">M101JS: MongoDB For Node.JS Developers</a><a href="http://inia.objectfrontier.com/redmine/projects/engineering/wiki/_MongoDB#M101JS-MongoDB-For-NodeJS-Developers" class="wiki-anchor">¶</a></h2>
+
+
+	<p>Follow the video tutorials, categorized into weeks and get a good understanding as to how applications are built on top of MongoDB using Node.js.</p>
+
+
+<hr>
+
+
+	<div class="contextual" id="section-3" title="Edit this section"><a href="http://inia.objectfrontier.com/redmine/projects/engineering/wiki/_MongoDB/edit?section=3"><img alt="Edit" src="./MongoDB - Solution Engineering Group - iNia_files/edit.png"></a></div><a name="Week-1-Introduction-and-Overview"></a>
+<h2>Week 1: Introduction and Overview<a href="http://inia.objectfrontier.com/redmine/projects/engineering/wiki/_MongoDB#Week-1-Introduction-and-Overview" class="wiki-anchor">¶</a></h2>
+
+
+	<p>Overview, Design Goals, the Mongo Shell, Introduction to JSON, Installing Tools, Overview of Blog Project and Introduction to Swig, Express and Node Packaged Modules (npm)</p>
+
+
+	<div class="contextual" id="section-4" title="Edit this section"><a href="http://inia.objectfrontier.com/redmine/projects/engineering/wiki/_MongoDB/edit?section=4"><img alt="Edit" src="./MongoDB - Solution Engineering Group - iNia_files/edit.png"></a></div><a name="Duration"></a>
+<h3>Duration<a href="http://inia.objectfrontier.com/redmine/projects/engineering/wiki/_MongoDB#Duration" class="wiki-anchor">¶</a></h3>
+
+
+	<ul>
+	<li>Lecture - 2 hours</li>
+		<li>Practice - 3 hours</li>
+	</ul>
+
+
+	<div class="contextual" id="section-5" title="Edit this section"><a href="http://inia.objectfrontier.com/redmine/projects/engineering/wiki/_MongoDB/edit?section=5"><img alt="Edit" src="./MongoDB - Solution Engineering Group - iNia_files/edit.png"></a></div><a name="Handouts"></a>
+<h3>Handouts<a href="http://inia.objectfrontier.com/redmine/projects/engineering/wiki/_MongoDB#Handouts" class="wiki-anchor">¶</a></h3>
+
+
+	<ul>
+	<li><a href="https://university.mongodb.com/static/10gen_2014_M101JS_October/handouts/week_1_introduction.e72161acc70b.zip" class="external">Week 1 Handout</a></li>
+	</ul>
+
+
+	<div class="contextual" id="section-6" title="Edit this section"><a href="http://inia.objectfrontier.com/redmine/projects/engineering/wiki/_MongoDB/edit?section=6"><img alt="Edit" src="./MongoDB - Solution Engineering Group - iNia_files/edit.png"></a></div><a name="Courseware"></a>
+<h3>Courseware<a href="http://inia.objectfrontier.com/redmine/projects/engineering/wiki/_MongoDB#Courseware" class="wiki-anchor">¶</a></h3>
+
+
+	<ul>
+	<li><a href="https://www.youtube.com/watch?v=t5bQQL9d3Dg" class="external">Welcome to M101JS</a> [2:36]
+	<ul>
+	<li><a href="https://www.youtube.com/watch?v=Ib-cFeUPIfw" class="external">Quiz Answer</a> [0:24]</li>
+	</ul></li>
+	</ul>
+
+
+	<ul>
+	<li><a href="https://www.youtube.com/watch?v=Lfl8hdQOi6Y" class="external">What is MongoDB?</a> [3:04]
+	<ul>
+	<li><a href="https://www.youtube.com/watch?v=CAR42sMkXEo" class="external">Quiz Answer</a> [0:13]</li>
+	</ul></li>
+	</ul>
+
+
+	<ul>
+	<li><a href="https://www.youtube.com/watch?v=-KIC1LXxcGM" class="external">MongoDB Relative to Relational</a> [2:58]
+	<ul>
+	<li><a href="https://www.youtube.com/watch?v=IAvnMgvHuLw" class="external">Quiz Answer</a> [0:42]</li>
+	</ul></li>
+	</ul>
+
+
+	<ul>
+	<li><a href="https://www.youtube.com/watch?v=iIhgggzzeoA" class="external">Overview of Building an App with MongoDB</a> [4:26]</li>
+	</ul>
+
+
+	<ul>
+	<li><a href="https://www.youtube.com/watch?v=gUHV4dTl1p4" class="external">System Requirements</a> [0:48]</li>
+	</ul>
+
+
+	<ul>
+	<li><a href="https://www.youtube.com/watch?v=pnVQcEt5_vw" title="mac" class="external">Installing MongoDB</a> [4:43]</li>
+	</ul>
+
+
+	<ul>
+	<li><a href="https://www.youtube.com/watch?v=c6-K8bpBxxY" title="windows" class="external">Installing MongoDB</a> [3:38]</li>
+	</ul>
+
+
+	<ul>
+	<li><a href="https://www.youtube.com/watch?v=j2v865GGS2A" class="external">Quick Introduction to the Mongo Shell</a> [4:09]</li>
+	</ul>
+
+
+	<ul>
+	<li><a href="https://www.youtube.com/watch?v=PTATjNSjbJ0" class="external">Introduction to JSON</a> [2:49]
+	<ul>
+	<li><a href="https://www.youtube.com/watch?v=uWcOsdV4Iz4" class="external">Quiz Answer</a> [0:35]</li>
+	</ul></li>
+	</ul>
+
+
+	<ul>
+	<li><a href="https://www.youtube.com/watch?v=3-u5Ih7kd0A" title="mac" class="external">Installing Node.js</a> [1:10]</li>
+	</ul>
+
+
+	<ul>
+	<li><a href="https://www.youtube.com/watch?v=ORKA9Ay9jfs" class="external">Asynchronous vs Synchronous</a> [4:31]</li>
+	</ul>
+
+
+	<ul>
+	<li><a href="https://www.youtube.com/watch?v=Fv5Q_02BKrM" class="external">Hello World on Node.js</a> [3:08]</li>
+	</ul>
+
+
+	<ul>
+	<li><a href="https://www.youtube.com/watch?v=KkWoaHOtGnk" class="external">Introduction to npm</a> [2:54]</li>
+	</ul>
+
+
+	<ul>
+	<li><a href="https://www.youtube.com/watch?v=SgQv3KWEGDc" class="external">Hello World, MongoDB Style</a> [6:58]</li>
+	</ul>
+
+
+	<ul>
+	<li><a href="https://www.youtube.com/watch?v=wSAOfA-BMCM" class="external">Hello World using Express</a> [3:40]</li>
+	</ul>
+
+
+	<ul>
+	<li><a href="https://www.youtube.com/watch?v=0aG8aBUP6nQ" class="external">Hello World using Express and Swig</a> [3:35]</li>
+	</ul>
+
+
+	<ul>
+	<li><a href="https://www.youtube.com/watch?v=KJMHteZRyXQ" class="external">Hello World using Express, Swig, and MongoDB</a> [5:31]</li>
+	</ul>
+
+
+	<ul>
+	<li><a href="https://www.youtube.com/watch?v=DZkLTikYqc4" class="external">Express: Handling GET Requests</a> [5:29]</li>
+	</ul>
+
+
+	<ul>
+	<li><a href="https://www.youtube.com/watch?v=rGWwQE89reU" class="external">Express: Handling POST Requests</a> [6:51]</li>
+	</ul>
+
+
+	<ul>
+	<li><a href="https://www.youtube.com/watch?v=uKB-Hoqs6zI" class="external">MongoDB is Schemaless</a> [2:40]</li>
+	</ul>
+
+
+	<ul>
+	<li><a href="https://www.youtube.com/watch?v=CTffxoSSLqg" class="external">JSON Revisited [Quiz]</a> [1:52]</li>
+	</ul>
+
+
+	<ul>
+	<li><a href="https://www.youtube.com/watch?v=vrYAEH3g13M" class="external">JSON Subdocuments [Quiz]</a> [0:31]
+	<ul>
+	<li><a href="https://www.youtube.com/watch?v=NGp_y6BaEMw" class="external">Quiz Answer</a> [0:16]</li>
+	</ul></li>
+	</ul>
+
+
+	<ul>
+	<li><a href="https://www.youtube.com/watch?v=kOrsT94-A28" class="external">JSON Spec</a> [1:05]</li>
+	</ul>
+
+
+	<ul>
+	<li><a href="https://www.youtube.com/watch?v=ePi3kDoexoM" class="external">Introduction to Our Class Project, The Blog</a> [1:14]</li>
+	</ul>
+
+
+	<ul>
+	<li><a href="https://www.youtube.com/watch?v=boR2y9MHCa0" class="external">Blog in Relational Tables</a> [2:28]
+	<ul>
+	<li><a href="https://www.youtube.com/watch?v=vB-4AbbLKeg" class="external">Quiz Answer</a> [0:34]</li>
+	</ul></li>
+	</ul>
+
+
+	<ul>
+	<li><a href="https://www.youtube.com/watch?v=ZjwCzyqKVdY" class="external">Blog in Documents</a> [3:47]
+	<ul>
+	<li><a href="https://www.youtube.com/watch?v=WJblHPsp1p4" class="external">Quiz Answer</a> [0:18]</li>
+	</ul></li>
+	</ul>
+
+
+	<ul>
+	<li><a href="https://www.youtube.com/watch?v=6XE3wZCPiZ8" class="external">Introduction to Schema Design</a> [2:02]
+	<ul>
+	<li><a href="https://www.youtube.com/watch?v=wiwOEG_6ojs" class="external">Quiz Answer</a> [1:16]</li>
+	</ul></li>
+	</ul>
+
+
+<hr>
+
+
+	<div class="contextual" id="section-7" title="Edit this section"><a href="http://inia.objectfrontier.com/redmine/projects/engineering/wiki/_MongoDB/edit?section=7"><img alt="Edit" src="./MongoDB - Solution Engineering Group - iNia_files/edit.png"></a></div><a name="Week-2-CRUD"></a>
+<h2>Week 2: CRUD<a href="http://inia.objectfrontier.com/redmine/projects/engineering/wiki/_MongoDB#Week-2-CRUD" class="wiki-anchor">¶</a></h2>
+
+
+	<p>Mongo Shell, Query Operators, Update Operators and a Few Commands</p>
+
+
+	<div class="contextual" id="section-8" title="Edit this section"><a href="http://inia.objectfrontier.com/redmine/projects/engineering/wiki/_MongoDB/edit?section=8"><img alt="Edit" src="./MongoDB - Solution Engineering Group - iNia_files/edit.png"></a></div><a name="Duration-2"></a>
+<h3>Duration<a href="http://inia.objectfrontier.com/redmine/projects/engineering/wiki/_MongoDB#Duration-2" class="wiki-anchor">¶</a></h3>
+
+
+	<ul>
+	<li>Lecture - 2.5 hours</li>
+		<li>Practice - 3 hours</li>
+	</ul>
+
+
+	<div class="contextual" id="section-9" title="Edit this section"><a href="http://inia.objectfrontier.com/redmine/projects/engineering/wiki/_MongoDB/edit?section=9"><img alt="Edit" src="./MongoDB - Solution Engineering Group - iNia_files/edit.png"></a></div><a name="Handouts-2"></a>
+<h3>Handouts<a href="http://inia.objectfrontier.com/redmine/projects/engineering/wiki/_MongoDB#Handouts-2" class="wiki-anchor">¶</a></h3>
+
+
+	<ul>
+	<li><a href="https://university.mongodb.com/static/10gen_2014_M101JS_October/handouts/week_2_crud.11a4d1f551db.zip" class="external">Week 2 Handout</a></li>
+	</ul>
+
+
+	<div class="contextual" id="section-10" title="Edit this section"><a href="http://inia.objectfrontier.com/redmine/projects/engineering/wiki/_MongoDB/edit?section=10"><img alt="Edit" src="./MongoDB - Solution Engineering Group - iNia_files/edit.png"></a></div><a name="Courseware-2"></a>
+<h3>Courseware<a href="http://inia.objectfrontier.com/redmine/projects/engineering/wiki/_MongoDB#Courseware-2" class="wiki-anchor">¶</a></h3>
+
+
+	<ul>
+	<li><a href="https://www.youtube.com/watch?v=C7LinMC2o5o" class="external">CRUD and the Mongo Shell</a> [1:54]
+	<ul>
+	<li><a href="https://www.youtube.com/watch?v=nWOt4VN6Y3g" class="external">Quiz Answer</a> [0:28]</li>
+	</ul></li>
+	</ul>
+
+
+	<ul>
+	<li><a href="https://www.youtube.com/watch?v=IIIzjPp-IRE" class="external">Secrets of the Mongo Shell</a> [6:04]
+	<ul>
+	<li><a href="https://www.youtube.com/watch?v=a6TFwpCoLoY" class="external">Quiz Answer</a> [0:27]</li>
+	</ul></li>
+	</ul>
+
+
+	<ul>
+	<li><a href="https://www.youtube.com/watch?v=K3J6WvDW-Hc" class="external">BSON Introduced</a> [5:04]
+	<ul>
+	<li><a href="https://www.youtube.com/watch?v=4hsTQrMs-xY" class="external">Quiz Answer</a> [0:15]</li>
+	</ul></li>
+	</ul>
+
+
+	<ul>
+	<li><a href="https://www.youtube.com/watch?v=qqfVxGLIrLg" class="external">Inserting Docs</a> [4:39]
+	<ul>
+	<li><a href="https://www.youtube.com/watch?v=BRAVnBz3ogE" class="external">Quiz Answer</a> [0:26]</li>
+	</ul></li>
+	</ul>
+
+
+	<ul>
+	<li><a href="https://www.youtube.com/watch?v=w9V0fJsDwbQ" class="external">Introduction to findOne</a> [4:22]
+	<ul>
+	<li><a href="https://www.youtube.com/watch?v=uN_wf5a3BE4" class="external">Quiz Answer</a> [0:29]</li>
+	</ul></li>
+	</ul>
+
+
+	<ul>
+	<li><a href="https://www.youtube.com/watch?v=8kKfFK6a0Ak" class="external">Introduction to find</a> [2:22]</li>
+	</ul>
+
+
+	<ul>
+	<li><a href="https://www.youtube.com/watch?v=UIg86QjSoyY" class="external">Querying Using field Selection</a> [1:53]
+	<ul>
+	<li><a href="https://www.youtube.com/watch?v=ouHFZgtEAuU" class="external">Quiz Answer</a> [0:19]</li>
+	</ul></li>
+	</ul>
+
+
+	<ul>
+	<li><a href="https://www.youtube.com/watch?v=FHLrz4VGzkg" class="external">Querying Using $gt and $lt</a> [3:43]
+	<ul>
+	<li><a href="https://www.youtube.com/watch?v=tY7I1l8JdDI" class="external">Quiz Answer</a> [0:10]</li>
+	</ul></li>
+	</ul>
+
+
+	<ul>
+	<li><a href="https://www.youtube.com/watch?v=imCCKOevU3c" class="external">Inequalities on Strings</a> [3:19]
+	<ul>
+	<li><a href="https://www.youtube.com/watch?v=ZRWT0lcHsoU" class="external">Quiz Answer</a> [0:21]</li>
+	</ul></li>
+	</ul>
+
+
+	<ul>
+	<li><a href="https://www.youtube.com/watch?v=lI-jhqYf1JY" class="external">Using regexes, $exists, $type</a> [4:03]
+	<ul>
+	<li><a href="https://www.youtube.com/watch?v=yMi7PwOoqXY" class="external">Quiz Answer</a> [0:18]</li>
+	</ul></li>
+	</ul>
+
+
+	<ul>
+	<li><a href="https://www.youtube.com/watch?v=BW5ElNCRZps" class="external">Using $or</a> [3:26]
+	<ul>
+	<li><a href="https://www.youtube.com/watch?v=diimYkvr374" class="external">Quiz Answer</a> [0:19]</li>
+	</ul></li>
+	</ul>
+
+
+	<ul>
+	<li><a href="https://www.youtube.com/watch?v=hYk7pjgjjzc" class="external">Using $and</a> [1:32]
+	<ul>
+	<li><a href="https://www.youtube.com/watch?v=oIkSajy8NLw" class="external">Quiz Answer</a> [1:15]</li>
+	</ul></li>
+	</ul>
+
+
+	<ul>
+	<li><a href="https://www.youtube.com/watch?v=jvEqwW75Bus" class="external">Querying Inside Arrays</a> [3:19]
+	<ul>
+	<li><a href="https://www.youtube.com/watch?v=gwECaa4N9Xc" class="external">Quiz Answer</a> [0:10]</li>
+	</ul></li>
+	</ul>
+
+
+	<ul>
+	<li><a href="https://www.youtube.com/watch?v=QU2NrkviORE" class="external">Using $in and $all</a> [2:37]
+	<ul>
+	<li><a href="https://www.youtube.com/watch?v=6O1UGHwuEww" class="external">Quiz Answer</a> [0:23]</li>
+	</ul></li>
+	</ul>
+
+
+	<ul>
+	<li><a href="https://www.youtube.com/watch?v=NrjFECIfwqk" class="external">Queries with Dot Notation</a> [3:48]
+	<ul>
+	<li><a href="https://www.youtube.com/watch?v=yiEjK_V008s" class="external">Quiz Answer</a> [0:46]</li>
+	</ul></li>
+	</ul>
+
+
+	<ul>
+	<li><a href="https://www.youtube.com/watch?v=3jA6iFSEJOI" class="external">Querying, Cursors</a> [5:56]
+	<ul>
+	<li><a href="https://www.youtube.com/watch?v=djzpK7UIO94" class="external">Quiz Answer</a> [0:20]</li>
+	</ul></li>
+	</ul>
+
+
+	<ul>
+	<li><a href="https://www.youtube.com/watch?v=eKD5bVmNQMI" class="external">Counting Results</a> [1:17]
+	<ul>
+	<li><a href="https://www.youtube.com/watch?v=Uozp0diXOc8" class="external">Quiz Answer</a> [0:12]</li>
+	</ul></li>
+	</ul>
+
+
+	<ul>
+	<li><a href="https://www.youtube.com/watch?v=g7Fi1xXsuvU" class="external">Wholesale Updating of a Document</a> [3:34]
+	<ul>
+	<li><a href="https://www.youtube.com/watch?v=pwnRUdtI8lY" class="external">Quiz Answer</a> [0:25]</li>
+	</ul></li>
+	</ul>
+
+
+	<ul>
+	<li><a href="https://www.youtube.com/watch?v=XyhNjs2pNVc" class="external">Using the $set Command</a> [2:34]
+	<ul>
+	<li><a href="https://www.youtube.com/watch?v=G2e5ZxqR6nw" class="external">Quiz Answer</a> [0:37]</li>
+	</ul></li>
+	</ul>
+
+
+	<ul>
+	<li><a href="https://www.youtube.com/watch?v=LpErz8jLW0I" class="external">Using the $unset Command</a> [1:19]
+	<ul>
+	<li><a href="https://www.youtube.com/watch?v=-CzLvQS12wY" class="external">Quiz Answer</a> [0:52]</li>
+	</ul></li>
+	</ul>
+
+
+	<ul>
+	<li><a href="https://www.youtube.com/watch?v=GOn0EWKDQoY" class="external">Using $push, $pop, $pull, $pushAll, $pullAll, $addToSet</a> [3:25]
+	<ul>
+	<li><a href="https://www.youtube.com/watch?v=bGbiIGEM0FY" class="external">Quiz Answer</a> [1:04]</li>
+	</ul></li>
+	</ul>
+
+
+	<ul>
+	<li><a href="https://www.youtube.com/watch?v=Dy2p8k3EZs4" class="external">Upserts</a> [2:58]
+	<ul>
+	<li><a href="https://www.youtube.com/watch?v=Loo5XKQAryM" class="external">Quiz Answer</a> [0:19]</li>
+	</ul></li>
+	</ul>
+
+
+	<ul>
+	<li><a href="https://www.youtube.com/watch?v=2GNNdUmDL-4" class="external">Multi-update</a> [5:27]
+	<ul>
+	<li><a href="https://www.youtube.com/watch?v=puGW4t5wmOU" class="external">Quiz Answer</a> [0:42]</li>
+	</ul></li>
+	</ul>
+
+
+	<ul>
+	<li><a href="https://www.youtube.com/watch?v=5K0t1dU8IJY" class="external">Removing Data</a> [3:17]
+	<ul>
+	<li><a href="https://www.youtube.com/watch?v=AGvJs8xqZJg" class="external">Quiz Answer</a> [0:30]</li>
+	</ul></li>
+	</ul>
+
+
+	<ul>
+	<li><a href="https://www.youtube.com/watch?v=a6o0TQjUMug" title="MongoDB v2.4 and earlier" class="external">getLastError</a> [3:35]</li>
+	</ul>
+
+
+	<ul>
+	<li><a href="https://www.youtube.com/watch?v=elGy_YOtn4Q" class="external">Node.js Driver: find, findOne, and cursors</a> [9:54]
+	<ul>
+	<li><a href="https://www.youtube.com/watch?v=RfFQrjRL3RQ" class="external">Quiz Answer</a> [0:20]</li>
+	</ul></li>
+	</ul>
+
+
+	<ul>
+	<li><a href="https://www.youtube.com/watch?v=i-C8I5xrvn0" class="external">Node.js Driver: Using Field Projection</a> [3:00]
+	<ul>
+	<li><a href="https://www.youtube.com/watch?v=nMtZ1hmppVo" class="external">Quiz Answer</a> [0:29]</li>
+	</ul></li>
+	</ul>
+
+
+	<ul>
+	<li><a href="https://www.youtube.com/watch?v=jhqdI1xLVWg" class="external">Node.js Driver: Using $gt and $lt</a> [2:48]
+	<ul>
+	<li><a href="https://www.youtube.com/watch?v=qEOgkYB8r_k" class="external">Quiz Answer</a> [0:11]</li>
+	</ul></li>
+	</ul>
+
+
+	<ul>
+	<li><a href="https://www.youtube.com/watch?v=2pMtlTeJ8Ek" class="external">Importing Reddit</a> [4:51]</li>
+	</ul>
+
+
+	<ul>
+	<li><a href="https://www.youtube.com/watch?v=gQVnirqZEbM" class="external">Node.js Driver: Using $regex</a> [3:05]
+	<ul>
+	<li><a href="https://www.youtube.com/watch?v=dBo4scpq_P4" class="external">Quiz Answer</a> [1:06]</li>
+	</ul></li>
+	</ul>
+
+
+	<ul>
+	<li><a href="https://www.youtube.com/watch?v=YNA4EnxgdQY" class="external">Node.js Driver: Using Dot Notation</a> [3:27]
+	<ul>
+	<li><a href="https://www.youtube.com/watch?v=6Iy7edNKl0Q" class="external">Quiz Answer</a> [0:26]</li>
+	</ul></li>
+	</ul>
+
+
+	<ul>
+	<li><a href="https://www.youtube.com/watch?v=GD78tbm_qvQ" class="external">Node.js Driver: Skip, Limit and Sort</a> [5:54]
+	<ul>
+	<li><a href="https://www.youtube.com/watch?v=t0runNOwPdY" class="external">Quiz Answer</a> [1:06]</li>
+	</ul></li>
+	</ul>
+
+
+	<ul>
+	<li><a href="https://www.youtube.com/watch?v=zrDCLNYbKNU" class="external">Node.js Driver: Inserting, _id</a> [5:33]
+	<ul>
+	<li><a href="https://www.youtube.com/watch?v=y_qyqkNuZMQ" class="external">Quiz Answer</a> [0:30]</li>
+	</ul></li>
+	</ul>
+
+
+	<ul>
+	<li><a href="https://www.youtube.com/watch?v=hf85eZvYosY" class="external">Node.js Driver: Updating</a> [8:41]
+	<ul>
+	<li><a href="https://www.youtube.com/watch?v=MNLN8k57lf0" class="external">Quiz Answer</a> [0:26]</li>
+	</ul></li>
+	</ul>
+
+
+	<ul>
+	<li><a href="https://www.youtube.com/watch?v=msse79yvaEo" class="external">Node.js Driver: Upserts</a> [5:54]
+	<ul>
+	<li><a href="https://www.youtube.com/watch?v=atzwFFtqsjA" class="external">Quiz Answer</a> [0:21]</li>
+	</ul></li>
+	</ul>
+
+
+	<ul>
+	<li><a href="https://www.youtube.com/watch?v=QnQxACsXrBk" class="external">Node.js Driver: findAndModify</a> [6:52]
+	<ul>
+	<li><a href="https://www.youtube.com/watch?v=BxBa3Oos_LQ" class="external">Quiz Answer</a> [0:53]</li>
+	</ul></li>
+	</ul>
+
+
+	<ul>
+	<li><a href="https://www.youtube.com/watch?v=9Rl2-gzLy20" class="external">Node.js Driver: Remove</a> [1:48]
+	<ul>
+	<li><a href="https://www.youtube.com/watch?v=U2OUHMc1JNA" class="external">Quiz Answer</a> [1:09]</li>
+	</ul></li>
+	</ul>
+
+
+	<ul>
+	<li><a href="https://www.youtube.com/watch?v=TcDqVQxYWZ0" class="external">Blog Introduction</a> [4:07]</li>
+	</ul>
+
+
+	<ul>
+	<li><a href="https://www.youtube.com/watch?v=M8NCh6JqG8Q" class="external">Blog Application Architecture</a> [6:52]</li>
+	</ul>
+
+
+	<ul>
+	<li><a href="https://www.youtube.com/watch?v=C3CLiy5HkxE" class="external">Blog, Session Management</a> [3:43]</li>
+	</ul>
+
+
+<hr>
+
+
+	<div class="contextual" id="section-11" title="Edit this section"><a href="http://inia.objectfrontier.com/redmine/projects/engineering/wiki/_MongoDB/edit?section=11"><img alt="Edit" src="./MongoDB - Solution Engineering Group - iNia_files/edit.png"></a></div><a name="Week-3-Schema-Design"></a>
+<h2>Week 3: Schema Design<a href="http://inia.objectfrontier.com/redmine/projects/engineering/wiki/_MongoDB#Week-3-Schema-Design" class="wiki-anchor">¶</a></h2>
+
+
+	<p>Patterns, Case Studies &amp; Tradeoffs</p>
+
+
+	<div class="contextual" id="section-12" title="Edit this section"><a href="http://inia.objectfrontier.com/redmine/projects/engineering/wiki/_MongoDB/edit?section=12"><img alt="Edit" src="./MongoDB - Solution Engineering Group - iNia_files/edit.png"></a></div><a name="Duration-3"></a>
+<h3>Duration<a href="http://inia.objectfrontier.com/redmine/projects/engineering/wiki/_MongoDB#Duration-3" class="wiki-anchor">¶</a></h3>
+
+
+	<ul>
+	<li>Lecture - 1 hours</li>
+		<li>Practice - 3 hours</li>
+	</ul>
+
+
+	<div class="contextual" id="section-13" title="Edit this section"><a href="http://inia.objectfrontier.com/redmine/projects/engineering/wiki/_MongoDB/edit?section=13"><img alt="Edit" src="./MongoDB - Solution Engineering Group - iNia_files/edit.png"></a></div><a name="Handouts-3"></a>
+<h3>Handouts<a href="http://inia.objectfrontier.com/redmine/projects/engineering/wiki/_MongoDB#Handouts-3" class="wiki-anchor">¶</a></h3>
+
+
+	<ul>
+	<li><a href="https://university.mongodb.com/static/10gen_2014_M101JS_October/handouts/week_3_schema_design.47320b83dff6.zip" class="external">Week 3 Handout</a></li>
+	</ul>
+
+
+	<div class="contextual" id="section-14" title="Edit this section"><a href="http://inia.objectfrontier.com/redmine/projects/engineering/wiki/_MongoDB/edit?section=14"><img alt="Edit" src="./MongoDB - Solution Engineering Group - iNia_files/edit.png"></a></div><a name="Courseware-3"></a>
+<h3>Courseware<a href="http://inia.objectfrontier.com/redmine/projects/engineering/wiki/_MongoDB#Courseware-3" class="wiki-anchor">¶</a></h3>
+
+
+	<ul>
+	<li><a href="https://www.youtube.com/watch?v=9urnY4OcuNM" class="external">Introduction to Week 3</a> [0:33]</li>
+	</ul>
+
+
+	<ul>
+	<li><a href="https://www.youtube.com/watch?v=itnfWjMnQ4A" class="external">MongoDB Schema Design</a> [3:26]
+	<ul>
+	<li><a href="https://www.youtube.com/watch?v=OVDnLJXpqNE" class="external">Quiz Answer</a> [0:20]</li>
+	</ul></li>
+	</ul>
+
+
+	<ul>
+	<li><a href="https://www.youtube.com/watch?v=GX__f2s4hd8" class="external">Relational Normalization</a> [4:55]</li>
+	</ul>
+
+
+	<ul>
+	<li><a href="https://www.youtube.com/watch?v=PRylEHH5t84" class="external">Mongo Design for Blog</a> [4:39]
+	<ul>
+	<li><a href="https://www.youtube.com/watch?v=s5E0T4caqj4" class="external">Quiz Answer</a> [1:45]</li>
+	</ul></li>
+	</ul>
+
+
+	<ul>
+	<li><a href="https://www.youtube.com/watch?v=ZvqNWVWB2-o" class="external">Alternative Schema for Blog</a> [3:06]</li>
+	</ul>
+
+
+	<ul>
+	<li><a href="https://www.youtube.com/watch?v=YFRMkDPaams" class="external">Living Without Constraints</a> [3:01]
+	<ul>
+	<li><a href="https://www.youtube.com/watch?v=3VckBMGInic" class="external">Quiz Answer</a> [0:07]</li>
+	</ul></li>
+	</ul>
+
+
+	<ul>
+	<li><a href="https://www.youtube.com/watch?v=FfRr3qjRfww" class="external">Living Without Transactions</a> [4:16]
+	<ul>
+	<li><a href="https://www.youtube.com/watch?v=189zABW3HHk" class="external">Quiz Answer</a> [0:08]</li>
+	</ul></li>
+	</ul>
+
+
+	<ul>
+	<li><a href="https://www.youtube.com/watch?v=cCsfon0vUlQ" class="external">One to One Relations</a> [3:50]
+	<ul>
+	<li><a href="https://www.youtube.com/watch?v=BjW64RkzlGg" class="external">Quiz Answer</a> [1:02]</li>
+	</ul></li>
+	</ul>
+
+
+	<ul>
+	<li><a href="https://www.youtube.com/watch?v=EIaP1KbVkUc" class="external">One to Many Relations</a> [5:05]
+	<ul>
+	<li><a href="https://www.youtube.com/watch?v=KQcspnr-Y2M" class="external">Quiz Answer</a> [0:20]</li>
+	</ul></li>
+	</ul>
+
+
+	<ul>
+	<li><a href="https://www.youtube.com/watch?v=fEYYjZ7zEHc" class="external">Many to Many Relations</a> [4:48]</li>
+	</ul>
+
+
+	<ul>
+	<li><a href="https://www.youtube.com/watch?v=KtIY4Q1tUao" class="external">Multikeys</a> [3:45]</li>
+	</ul>
+
+
+	<ul>
+	<li><a href="https://www.youtube.com/watch?v=XIN0Dqht08Q" class="external">Benefits of Embedding</a> [1:57]</li>
+	</ul>
+
+
+	<ul>
+	<li><a href="https://www.youtube.com/watch?v=lIjXyQklGWY" class="external">Trees</a> [2:39]
+	<ul>
+	<li><a href="https://www.youtube.com/watch?v=80P6yVSkKQY" class="external">Quiz Answer</a> [0:29]</li>
+	</ul></li>
+	</ul>
+
+
+	<ul>
+	<li><a href="https://www.youtube.com/watch?v=jDZ-HFoJ0vg" class="external">When to Denormalize</a> [2:15]</li>
+	</ul>
+
+
+<hr>
+
+
+	<div class="contextual" id="section-15" title="Edit this section"><a href="http://inia.objectfrontier.com/redmine/projects/engineering/wiki/_MongoDB/edit?section=15"><img alt="Edit" src="./MongoDB - Solution Engineering Group - iNia_files/edit.png"></a></div><a name="Week-4-Performance"></a>
+<h2>Week 4: Performance<a href="http://inia.objectfrontier.com/redmine/projects/engineering/wiki/_MongoDB#Week-4-Performance" class="wiki-anchor">¶</a></h2>
+
+
+	<p>Using Indexes, Monitoring And Understanding Performance. Performance In Sharded Environments</p>
+
+
+	<div class="contextual" id="section-16" title="Edit this section"><a href="http://inia.objectfrontier.com/redmine/projects/engineering/wiki/_MongoDB/edit?section=16"><img alt="Edit" src="./MongoDB - Solution Engineering Group - iNia_files/edit.png"></a></div><a name="Duration-4"></a>
+<h3>Duration<a href="http://inia.objectfrontier.com/redmine/projects/engineering/wiki/_MongoDB#Duration-4" class="wiki-anchor">¶</a></h3>
+
+
+	<ul>
+	<li>Lecture - 1.75 hours</li>
+		<li>Practice - 3 hours</li>
+	</ul>
+
+
+	<div class="contextual" id="section-17" title="Edit this section"><a href="http://inia.objectfrontier.com/redmine/projects/engineering/wiki/_MongoDB/edit?section=17"><img alt="Edit" src="./MongoDB - Solution Engineering Group - iNia_files/edit.png"></a></div><a name="Handouts-4"></a>
+<h3>Handouts<a href="http://inia.objectfrontier.com/redmine/projects/engineering/wiki/_MongoDB#Handouts-4" class="wiki-anchor">¶</a></h3>
+
+
+	<ul>
+	<li><a href="https://university.mongodb.com/static/10gen_2014_M101JS_October/handouts/week_4_performance.43103264e8c8.zip" class="external">Week 4 Handout</a></li>
+	</ul>
+
+
+	<div class="contextual" id="section-18" title="Edit this section"><a href="http://inia.objectfrontier.com/redmine/projects/engineering/wiki/_MongoDB/edit?section=18"><img alt="Edit" src="./MongoDB - Solution Engineering Group - iNia_files/edit.png"></a></div><a name="Courseware-4"></a>
+<h3>Courseware<a href="http://inia.objectfrontier.com/redmine/projects/engineering/wiki/_MongoDB#Courseware-4" class="wiki-anchor">¶</a></h3>
+
+
+	<ul>
+	<li><a href="https://www.youtube.com/watch?v=8qBXI8ggV88" class="external">Introduction to Week 4</a> [1:04]</li>
+	</ul>
+
+
+	<ul>
+	<li><a href="https://www.youtube.com/watch?v=kkIAqyqYOCc" class="external">Indexes</a> [6:24]
+	<ul>
+	<li><a href="https://www.youtube.com/watch?v=5Z6V8mJ8eS4" class="external">Quiz Answer</a> [0:53]</li>
+	</ul></li>
+	</ul>
+
+
+	<ul>
+	<li><a href="https://www.youtube.com/watch?v=tRqenx45UAM" class="external">Creating Indexes</a> [5:42]
+	<ul>
+	<li><a href="https://www.youtube.com/watch?v=h1VdrcOjFm8" class="external">Quiz Answer</a> [0:14]</li>
+	</ul></li>
+	</ul>
+
+
+	<ul>
+	<li><a href="https://www.youtube.com/watch?v=hH7kYu_-FXg" class="external">Discovering Indexes</a> [2:31]</li>
+	</ul>
+
+
+	<ul>
+	<li><a href="https://www.youtube.com/watch?v=8DqRASZGu9k" class="external">Multikey Indexes</a> [3:48]
+	<ul>
+	<li><a href="https://www.youtube.com/watch?v=CeE6hZ90Uzk" class="external">Quiz Answer</a> [0:25]</li>
+	</ul></li>
+	</ul>
+
+
+	<ul>
+	<li><a href="https://www.youtube.com/watch?v=mPSGG2p33RQ" class="external">Multikey Continued</a> [1:41]</li>
+	</ul>
+
+
+	<ul>
+	<li><a href="https://www.youtube.com/watch?v=99-5N213g0w" class="external">Index Creation Option, Unique</a> [3:05]
+	<ul>
+	<li><a href="https://www.youtube.com/watch?v=cCO7b-fcj0I" class="external">Quiz Answer</a> [0:07]</li>
+	</ul></li>
+	</ul>
+
+
+	<ul>
+	<li><a href="https://www.youtube.com/watch?v=s6KZsAhSUO4" class="external">Index Creation, Removing Dups</a> [2:49]
+	<ul>
+	<li><a href="https://www.youtube.com/watch?v=s46y1rJAvVs" class="external">Quiz Answer</a> [0:11]</li>
+	</ul></li>
+	</ul>
+
+
+	<ul>
+	<li><a href="https://www.youtube.com/watch?v=Gi4uZXLh0Ks" class="external">Index Creation, Sparse</a> [6:52]
+	<ul>
+	<li><a href="https://www.youtube.com/watch?v=CHh9JRMdTb8" class="external">Quiz Answer</a> [0:30]</li>
+	</ul></li>
+	</ul>
+
+
+	<ul>
+	<li><a href="https://www.youtube.com/watch?v=28wCvoXmY7A" class="external">Index Creation, Background</a> [2:52]
+	<ul>
+	<li><a href="https://www.youtube.com/watch?v=aNSHjG_LnSc" class="external">Quiz Answer</a> [0:49]</li>
+	</ul></li>
+	</ul>
+
+
+	<ul>
+	<li><a href="https://www.youtube.com/watch?v=r5YeICVzDjQ" class="external">Using Explain</a> [8:42]
+	<ul>
+	<li>"Quiz Answer":NA</li>
+	</ul></li>
+	</ul>
+
+
+	<ul>
+	<li><a href="https://www.youtube.com/watch?v=Lwms58Y_3Jc" class="external">When is an Index Used?</a> [2:29]
+	<ul>
+	<li><a href="https://www.youtube.com/watch?v=imHqsvqx-GA" class="external">Quiz Answer</a> [1:24]</li>
+	</ul></li>
+	</ul>
+
+
+	<ul>
+	<li><a href="https://www.youtube.com/watch?v=oywrqWNY46s" class="external">How Large is Your Index?</a> [3:22]
+	<ul>
+	<li><a href="https://www.youtube.com/watch?v=mXHUIghDkFw" class="external">Quiz Answer</a> [0:05]</li>
+	</ul></li>
+	</ul>
+
+
+	<ul>
+	<li><a href="https://www.youtube.com/watch?v=xiujksUfzUA" class="external">Index Cardinality</a> [2:44]
+	<ul>
+	<li><a href="https://www.youtube.com/watch?v=4UW_oMSswTo" class="external">Quiz Answer</a> [0:13]</li>
+	</ul></li>
+	</ul>
+
+
+	<ul>
+	<li><a href="https://www.youtube.com/watch?v=On8HHR1agsI" class="external">Index Selectivity</a> [2:35]
+	<ul>
+	<li><a href="https://www.youtube.com/watch?v=BT95omWR2nw" class="external">Quiz Answer</a> [0:39]</li>
+	</ul></li>
+	</ul>
+
+
+	<ul>
+	<li><a href="https://www.youtube.com/watch?v=UWpBNV378pE" class="external">Hinting an Index</a> [3:52]
+	<ul>
+	<li>"Quiz Answer":NA</li>
+	</ul></li>
+	</ul>
+
+
+	<ul>
+	<li><a href="https://www.youtube.com/watch?v=jWdTufrooYo" class="external">Hinting in Node.js</a> [7:10]</li>
+	</ul>
+
+
+	<ul>
+	<li><a href="https://www.youtube.com/watch?v=1sADN-NKwhY" class="external">Efficiency of Index Use</a> [4:17]</li>
+	</ul>
+
+
+	<ul>
+	<li><a href="https://www.youtube.com/watch?v=UKUDYqNVL6I" class="external">Geospatial Indexes</a> [5:05]
+	<ul>
+	<li><a href="https://www.youtube.com/watch?v=hVLa0H7Oe98" class="external">Quiz Answer</a> [0:08]</li>
+	</ul></li>
+	</ul>
+
+
+	<ul>
+	<li><a href="https://www.youtube.com/watch?v=pULU4DVsUWQ" class="external">Geospatial Spherical</a> [9:24]
+	<ul>
+	<li><a href="https://www.youtube.com/watch?v=YtRnCyKS1VE" class="external">Quiz Answer</a> [0:25]</li>
+	</ul></li>
+	</ul>
+
+
+	<ul>
+	<li><a href="https://www.youtube.com/watch?v=l_2kwrIlZ_g" class="external">Text Searches in MongoDB</a> [5:19]
+	<ul>
+	<li><a href="https://www.youtube.com/watch?v=7OK0e1gftjg" class="external">Quiz Answer</a> [0:17]</li>
+	</ul></li>
+	</ul>
+
+
+	<ul>
+	<li><a href="https://www.youtube.com/watch?v=aWuvC-O7Qkk" class="external">Logging Slow Queries</a> [1:58]</li>
+	</ul>
+
+
+	<ul>
+	<li><a href="https://www.youtube.com/watch?v=pN1Yhrup9-I" class="external">Profiling</a> [5:21]
+	<ul>
+	<li><a href="https://www.youtube.com/watch?v=A4x4kE02pSc" class="external">Quiz Answer</a> [0:13]</li>
+	</ul></li>
+	</ul>
+
+
+	<ul>
+	<li><a href="https://www.youtube.com/watch?v=D9YLXgy7NYo" class="external">Mongotop</a> [4:20]</li>
+	</ul>
+
+
+	<ul>
+	<li><a href="https://www.youtube.com/watch?v=eLWQO_AJmrI" class="external">Mongostat</a> [4:08]</li>
+	</ul>
+
+
+	<ul>
+	<li><a href="https://www.youtube.com/watch?v=BDxT-VZdYqc" class="external">Sharding Overview</a> [4:34]</li>
+	</ul>
+
+
+<hr>
+
+
+	<div class="contextual" id="section-19" title="Edit this section"><a href="http://inia.objectfrontier.com/redmine/projects/engineering/wiki/_MongoDB/edit?section=19"><img alt="Edit" src="./MongoDB - Solution Engineering Group - iNia_files/edit.png"></a></div><a name="Week-5-Aggregation-Framework"></a>
+<h2>Week 5: Aggregation Framework<a href="http://inia.objectfrontier.com/redmine/projects/engineering/wiki/_MongoDB#Week-5-Aggregation-Framework" class="wiki-anchor">¶</a></h2>
+
+
+	<p>Goals, The Use Of The Pipeline, Comparison With SQL Facilities</p>
+
+
+	<div class="contextual" id="section-20" title="Edit this section"><a href="http://inia.objectfrontier.com/redmine/projects/engineering/wiki/_MongoDB/edit?section=20"><img alt="Edit" src="./MongoDB - Solution Engineering Group - iNia_files/edit.png"></a></div><a name="Duration-5"></a>
+<h3>Duration<a href="http://inia.objectfrontier.com/redmine/projects/engineering/wiki/_MongoDB#Duration-5" class="wiki-anchor">¶</a></h3>
+
+
+	<ul>
+	<li>Lecture - 1.75 hours</li>
+		<li>Practice - 3 hours</li>
+	</ul>
+
+
+	<div class="contextual" id="section-21" title="Edit this section"><a href="http://inia.objectfrontier.com/redmine/projects/engineering/wiki/_MongoDB/edit?section=21"><img alt="Edit" src="./MongoDB - Solution Engineering Group - iNia_files/edit.png"></a></div><a name="Handouts-5"></a>
+<h3>Handouts<a href="http://inia.objectfrontier.com/redmine/projects/engineering/wiki/_MongoDB#Handouts-5" class="wiki-anchor">¶</a></h3>
+
+
+	<ul>
+	<li><a href="https://university.mongodb.com/static/10gen_2014_M101JS_October/handouts/week_5_aggregation_framework.aa35ebe6f2f0.zip" class="external">Week 5 Handout</a></li>
+	</ul>
+
+
+	<div class="contextual" id="section-22" title="Edit this section"><a href="http://inia.objectfrontier.com/redmine/projects/engineering/wiki/_MongoDB/edit?section=22"><img alt="Edit" src="./MongoDB - Solution Engineering Group - iNia_files/edit.png"></a></div><a name="Courseware-5"></a>
+<h3>Courseware<a href="http://inia.objectfrontier.com/redmine/projects/engineering/wiki/_MongoDB#Courseware-5" class="wiki-anchor">¶</a></h3>
+
+
+	<ul>
+	<li><a href="https://www.youtube.com/watch?v=EaEIHm3CMQM" class="external">Introduction to Week 5</a> [0:43]</li>
+	</ul>
+
+
+	<ul>
+	<li><a href="https://www.youtube.com/watch?v=DQBXCsjeO5c" class="external">Simple Aggregation Example</a> [5:07]
+	<ul>
+	<li><a href="https://www.youtube.com/watch?v=Nt0cQI86G40" class="external">Quiz Answer</a> [0:23]</li>
+	</ul></li>
+	</ul>
+
+
+	<ul>
+	<li><a href="https://www.youtube.com/watch?v=AuO8CEkTG6Y" class="external">The Aggregation Pipeline</a> [5:54]
+	<ul>
+	<li><a href="https://www.youtube.com/watch?v=mcnGfI69rRc" class="external">Quiz Answer</a> [0:07]</li>
+	</ul></li>
+	</ul>
+
+
+	<ul>
+	<li><a href="https://www.youtube.com/watch?v=3lEpnMcfpCs" class="external">Simple Example Expanded</a> [5:00]
+	<ul>
+	<li><a href="https://www.youtube.com/watch?v=nr1E1qTyIHU" class="external">Quiz Answer</a> [0:28]</li>
+	</ul></li>
+	</ul>
+
+
+	<ul>
+	<li><a href="https://www.youtube.com/watch?v=qTbtax_cKcc" class="external">Compound Grouping</a> [3:39]
+	<ul>
+	<li><a href="https://www.youtube.com/watch?v=bIlwnlYBRA0" class="external">Quiz Answer</a> [0:29]</li>
+	</ul></li>
+	</ul>
+
+
+	<ul>
+	<li><a href="https://www.youtube.com/watch?v=zoN4cj_XQzY" class="external">Using a document for _id</a> [1:11]</li>
+	</ul>
+
+
+	<ul>
+	<li><a href="https://www.youtube.com/watch?v=L4G14MTfTgQ" class="external">Aggregation Expressions</a> [1:40]
+	<ul>
+	<li><a href="https://www.youtube.com/watch?v=kJ0k2na4ukU" class="external">Quiz Answer</a> [0:13]</li>
+	</ul></li>
+	</ul>
+
+
+	<ul>
+	<li><a href="https://www.youtube.com/watch?v=93MSz3uDC1A" class="external">Using $sum</a> [3:16]
+	<ul>
+	<li><a href="https://www.youtube.com/watch?v=ATO_s_Ah08o" class="external">Quiz Answer</a> [0:21]</li>
+	</ul></li>
+	</ul>
+
+
+	<ul>
+	<li><a href="https://www.youtube.com/watch?v=baIDZ-M5j7w" class="external">Using $avg</a> [2:25]
+	<ul>
+	<li><a href="https://www.youtube.com/watch?v=tT6Jx8s9dTc" class="external">Quiz Answer</a> [0:37]</li>
+	</ul></li>
+	</ul>
+
+
+	<ul>
+	<li><a href="https://www.youtube.com/watch?v=YzURaZnKI9s" class="external">Using $addToSet</a> [3:36]
+	<ul>
+	<li><a href="https://www.youtube.com/watch?v=zGcTxUQuLGE[0:40" class="external">Quiz Answer</a>]</li>
+	</ul></li>
+	</ul>
+
+
+	<ul>
+	<li><a href="https://www.youtube.com/watch?v=LQcBM-g0ACY" class="external">Using $push</a> [2:01]
+	<ul>
+	<li><a href="https://www.youtube.com/watch?v=hFqDvVXtm6E" class="external">Quiz Answer</a> [1:18]</li>
+	</ul></li>
+	</ul>
+
+
+	<ul>
+	<li><a href="https://www.youtube.com/watch?v=BYoNX4trjOQ" class="external">Using $max and $min</a> [1:52]
+	<ul>
+	<li><a href="https://www.youtube.com/watch?v=sHCdOiCispA" class="external">Quiz Answer</a> [0:19]</li>
+	</ul></li>
+	</ul>
+
+
+	<ul>
+	<li><a href="https://www.youtube.com/watch?v=EIWF9Oxeb8M" class="external">Double $group stages</a> [3:00]
+	<ul>
+	<li><a href="https://www.youtube.com/watch?v=J-asAAEHJ0Q" class="external">Quiz Answer</a> [1:09]</li>
+	</ul></li>
+	</ul>
+
+
+	<ul>
+	<li><a href="https://www.youtube.com/watch?v=TbQ2PI5Fib0" class="external">Using $project</a> [3:59]
+	<ul>
+	<li><a href="https://www.youtube.com/watch?v=IGN0lXg-kJ0" class="external">Quiz Answer</a> [1:04]</li>
+	</ul></li>
+	</ul>
+
+
+	<ul>
+	<li><a href="https://www.youtube.com/watch?v=7RtHG90Hrbw" class="external">Using $match</a> [6:31]
+	<ul>
+	<li><a href="https://www.youtube.com/watch?v=CHGiumXE-pU" class="external">Quiz Answer</a> [0:18]</li>
+	</ul></li>
+	</ul>
+
+
+	<ul>
+	<li><a href="https://www.youtube.com/watch?v=HUEtV7omSb8" class="external">Using $sort</a> [3:05]
+	<ul>
+	<li><a href="https://www.youtube.com/watch?v=-cghyd6AHHA" class="external">Quiz Answer</a> [0:07]</li>
+	</ul></li>
+	</ul>
+
+
+	<ul>
+	<li><a href="https://www.youtube.com/watch?v=o5hzYKXUyrU" class="external">Using $limit and $skip</a> [2:17]
+	<ul>
+	<li><a href="https://www.youtube.com/watch?v=joRw-fqCIWA" class="external">Quiz Answer</a> [0:13]</li>
+	</ul></li>
+	</ul>
+
+
+	<ul>
+	<li><a href="https://www.youtube.com/watch?v=JOdAnxVAMwc" class="external">Revisiting $first and $last</a> [5:53]
+	<ul>
+	<li><a href="https://www.youtube.com/watch?v=MVSoinykIJA" class="external">Quiz Answer</a> [0:44]</li>
+	</ul></li>
+	</ul>
+
+
+	<ul>
+	<li><a href="https://www.youtube.com/watch?v=E4aYOQPeQvI" class="external">Using $unwind</a> [2:19]
+	<ul>
+	<li><a href="https://www.youtube.com/watch?v=Xfl3m7wz8ts" class="external">Quiz Answer</a> [0:19]</li>
+	</ul></li>
+	</ul>
+
+
+	<ul>
+	<li><a href="https://www.youtube.com/watch?v=U_4Enh2TTp4" class="external">$unwind example</a> [2:38]
+	<ul>
+	<li><a href="https://www.youtube.com/watch?v=jAWL-BJD0tI" class="external">Quiz Answer</a> [0:40]</li>
+	</ul></li>
+	</ul>
+
+
+	<ul>
+	<li><a href="https://www.youtube.com/watch?v=YXGL27217B8" class="external">Double $unwind</a> [2:50]
+	<ul>
+	<li><a href="https://www.youtube.com/watch?v=pziFq1oVRI4" class="external">Quiz Answer</a> [2:57]</li>
+	</ul></li>
+	</ul>
+
+
+	<ul>
+	<li><a href="https://www.youtube.com/watch?v=auL2R0XKlyM" class="external">Mapping between SQL and Aggregation</a> [1:42]</li>
+	</ul>
+
+
+	<ul>
+	<li><a href="https://www.youtube.com/watch?v=ep2gLSR6C0U" class="external">Some Common SQL examples</a> [3:13]</li>
+	</ul>
+
+
+	<ul>
+	<li><a href="https://www.youtube.com/watch?v=U_gRSxEq3c0" class="external">Limitations of the Aggregation Framwork</a> [4:26]</li>
+	</ul>
+
+
+<hr>
+
+
+	<div class="contextual" id="section-23" title="Edit this section"><a href="http://inia.objectfrontier.com/redmine/projects/engineering/wiki/_MongoDB/edit?section=23"><img alt="Edit" src="./MongoDB - Solution Engineering Group - iNia_files/edit.png"></a></div><a name="Week-6-Application-Engineering"></a>
+<h2>Week 6: Application Engineering<a href="http://inia.objectfrontier.com/redmine/projects/engineering/wiki/_MongoDB#Week-6-Application-Engineering" class="wiki-anchor">¶</a></h2>
+
+
+	<p>Drivers, Impact Of Replication And Sharding On Design And Development.</p>
+
+
+	<div class="contextual" id="section-24" title="Edit this section"><a href="http://inia.objectfrontier.com/redmine/projects/engineering/wiki/_MongoDB/edit?section=24"><img alt="Edit" src="./MongoDB - Solution Engineering Group - iNia_files/edit.png"></a></div><a name="Duration-6"></a>
+<h3>Duration<a href="http://inia.objectfrontier.com/redmine/projects/engineering/wiki/_MongoDB#Duration-6" class="wiki-anchor">¶</a></h3>
+
+
+	<ul>
+	<li>Lecture - 1.5 hours</li>
+		<li>Practice - 3 hours</li>
+	</ul>
+
+
+	<div class="contextual" id="section-25" title="Edit this section"><a href="http://inia.objectfrontier.com/redmine/projects/engineering/wiki/_MongoDB/edit?section=25"><img alt="Edit" src="./MongoDB - Solution Engineering Group - iNia_files/edit.png"></a></div><a name="Handouts-6"></a>
+<h3>Handouts<a href="http://inia.objectfrontier.com/redmine/projects/engineering/wiki/_MongoDB#Handouts-6" class="wiki-anchor">¶</a></h3>
+
+
+	<ul>
+	<li><a href="https://university.mongodb.com/static/10gen_2014_M101JS_October/handouts/week_6_application_engineering.9835f53911aa.zip" class="external">Week 6 Handout</a></li>
+	</ul>
+
+
+	<div class="contextual" id="section-26" title="Edit this section"><a href="http://inia.objectfrontier.com/redmine/projects/engineering/wiki/_MongoDB/edit?section=26"><img alt="Edit" src="./MongoDB - Solution Engineering Group - iNia_files/edit.png"></a></div><a name="Courseware-6"></a>
+<h3>Courseware<a href="http://inia.objectfrontier.com/redmine/projects/engineering/wiki/_MongoDB#Courseware-6" class="wiki-anchor">¶</a></h3>
+
+
+	<ul>
+	<li><a href="https://www.youtube.com/watch?v=3zcbhNHebAc" class="external">Introduction to Week 6</a> [0:48]</li>
+	</ul>
+
+
+	<ul>
+	<li><a href="https://www.youtube.com/watch?v=f1WTYGORU3w" class="external">Introduction to Replication</a> [2:33]
+	<ul>
+	<li><a href="https://www.youtube.com/watch?v=XCssKzhlnZU" class="external">Quiz Answer</a> [0:12]</li>
+	</ul></li>
+	</ul>
+
+
+	<ul>
+	<li><a href="https://www.youtube.com/watch?v=WFXSVHO78bQ" class="external">Replica Set Elections</a> [3:03]
+	<ul>
+	<li><a href="https://www.youtube.com/watch?v=vrUxTTD-XwA" class="external">Quiz Answer</a> [0:13]</li>
+	</ul></li>
+	</ul>
+
+
+	<ul>
+	<li><a href="https://www.youtube.com/watch?v=Oqf_Eza-s1M" class="external">Write Consistency</a> [3:06]
+	<ul>
+	<li><a href="https://www.youtube.com/watch?v=SjaJEYK1u3E" class="external">Quiz Answer</a> [0:22]</li>
+	</ul></li>
+	</ul>
+
+
+	<ul>
+	<li><a href="https://www.youtube.com/watch?v=flCFVFBRsKI" class="external">Creating a Replica Set</a> [8:16]
+	<ul>
+	<li><a href="https://www.youtube.com/watch?v=ibZVf59aUj8" class="external">Quiz Answer</a> [0:02]</li>
+	</ul></li>
+	</ul>
+
+
+	<ul>
+	<li><a href="https://www.youtube.com/watch?v=GEViDe9NRMk" class="external">Implications of Replication</a> [2:24]</li>
+	</ul>
+
+
+	<ul>
+	<li><a href="https://www.youtube.com/watch?v=lx0Kj4n4EWM" class="external">Replica Set Internals</a> [5:14]
+	<ul>
+	<li><a href="https://www.youtube.com/watch?v=_am2mdVF1uk" class="external">Quiz Answer</a> [0:07]</li>
+	</ul></li>
+	</ul>
+
+
+	<ul>
+	<li><a href="https://www.youtube.com/watch?v=IW1oW_Adlt0" class="external">Failover and Rollback</a> [3:49]
+	<ul>
+	<li><a href="https://www.youtube.com/watch?v=t3rNxRg6WZE" class="external">Quiz Answer</a> [0:09]</li>
+	</ul></li>
+	</ul>
+
+
+	<ul>
+	<li><a href="https://www.youtube.com/watch?v=H1bzY0ktgEg" class="external">Connecting to a Replica Set from the Node.js Driver</a> [5:02]
+	<ul>
+	<li><a href="https://www.youtube.com/watch?v=FUXB7GrDeA0" class="external">Quiz Answer</a> [0:37]</li>
+	</ul></li>
+	</ul>
+
+
+	<ul>
+	<li><a href="https://www.youtube.com/watch?v=15jBQRolLV4" class="external">Failover in the Node.js Driver</a> [7:49]
+	<ul>
+	<li><a href="https://www.youtube.com/watch?v=tnf5m6M9-Bo" class="external">Quiz Answer</a> [0:29]</li>
+	</ul></li>
+	</ul>
+
+
+	<ul>
+	<li><a href="https://www.youtube.com/watch?v=ucqgEUVISqM" class="external">Write Concern</a> [5:04]
+	<ul>
+	<li><a href="https://www.youtube.com/watch?v=HqtfMarARBQ" class="external">Quiz Answer</a> [0:34]</li>
+	</ul></li>
+	</ul>
+
+
+	<ul>
+	<li><a href="https://www.youtube.com/watch?v=vpbs3SEgmvE" class="external">Read Preferences</a> [7:16]
+	<ul>
+	<li><a href="https://www.youtube.com/watch?v=FheFRpktCcI" class="external">Quiz Answer</a> [0:40]</li>
+	</ul></li>
+	</ul>
+
+
+	<ul>
+	<li><a href="https://www.youtube.com/watch?v=BycNYXFpqhM" class="external">Network Errors</a> [2:44]
+	<ul>
+	<li><a href="https://www.youtube.com/watch?v=64mAA3SEnkg" class="external">Quiz Answer</a> [0:18]</li>
+	</ul></li>
+	</ul>
+
+
+	<ul>
+	<li><a href="https://www.youtube.com/watch?v=_GfDqa1qRl0" class="external">Introduction to Sharding</a> [7:30]
+	<ul>
+	<li><a href="https://www.youtube.com/watch?v=4Z0D2bX5Cg4" class="external">Quiz Answer</a> [0:32]</li>
+	</ul></li>
+	</ul>
+
+
+	<ul>
+	<li><a href="https://www.youtube.com/watch?v=aaYc2W4keF4" class="external">Building a Sharded Environment</a> [14:11]
+	<ul>
+	<li><a href="https://www.youtube.com/watch?v=5tPjnJrY0rU" class="external">Quiz Answer</a> [0:11]</li>
+	</ul></li>
+	</ul>
+
+
+	<ul>
+	<li><a href="https://www.youtube.com/watch?v=ig278F60gRA" class="external">Implications of Sharding</a> [3:03]
+	<ul>
+	<li><a href="https://www.youtube.com/watch?v=vfl0hqdgB3Q" class="external">Quiz Answer</a> [0:07]</li>
+	</ul></li>
+	</ul>
+
+
+	<ul>
+	<li><a href="https://www.youtube.com/watch?v=gkUCUbM0oEg" class="external">Sharding + Replication</a> [3:22]
+	<ul>
+	<li><a href="https://www.youtube.com/watch?v=hnuiYokdO7g" class="external">Quiz Answer</a> [0:13]</li>
+	</ul></li>
+	</ul>
+
+
+	<ul>
+	<li><a href="https://www.youtube.com/watch?v=8q2GB3QSBSI" class="external">Choosing a Shard Key</a> [5:29]
+	<ul>
+	<li><a href="https://www.youtube.com/watch?v=91tO_iGga5w" class="external">Quiz Answer</a> [0:39]</li>
+	</ul></li>
+	</ul>
+
+
+<hr>
+
+
+	<div class="contextual" id="section-27" title="Edit this section"><a href="http://inia.objectfrontier.com/redmine/projects/engineering/wiki/_MongoDB/edit?section=27"><img alt="Edit" src="./MongoDB - Solution Engineering Group - iNia_files/edit.png"></a></div><a name="Week-7-Mongoose"></a>
+<h2>Week 7: Mongoose<a href="http://inia.objectfrontier.com/redmine/projects/engineering/wiki/_MongoDB#Week-7-Mongoose" class="wiki-anchor">¶</a></h2>
+
+
+	<div class="contextual" id="section-28" title="Edit this section"><a href="http://inia.objectfrontier.com/redmine/projects/engineering/wiki/_MongoDB/edit?section=28"><img alt="Edit" src="./MongoDB - Solution Engineering Group - iNia_files/edit.png"></a></div><a name="Duration-7"></a>
+<h3>Duration<a href="http://inia.objectfrontier.com/redmine/projects/engineering/wiki/_MongoDB#Duration-7" class="wiki-anchor">¶</a></h3>
+
+
+	<ul>
+	<li>Lecture - 1.75 hours</li>
+		<li>Practice - 0 hours</li>
+	</ul>
+
+
+	<div class="contextual" id="section-29" title="Edit this section"><a href="http://inia.objectfrontier.com/redmine/projects/engineering/wiki/_MongoDB/edit?section=29"><img alt="Edit" src="./MongoDB - Solution Engineering Group - iNia_files/edit.png"></a></div><a name="Handouts-7"></a>
+<h3>Handouts<a href="http://inia.objectfrontier.com/redmine/projects/engineering/wiki/_MongoDB#Handouts-7" class="wiki-anchor">¶</a></h3>
+
+
+	<ul>
+	<li><a href="https://university.mongodb.com/static/10gen_2014_M101JS_October/handouts/week_7_mongoose.d6150c576059.zip" class="external">Week 7 Handout</a></li>
+	</ul>
+
+
+	<div class="contextual" id="section-30" title="Edit this section"><a href="http://inia.objectfrontier.com/redmine/projects/engineering/wiki/_MongoDB/edit?section=30"><img alt="Edit" src="./MongoDB - Solution Engineering Group - iNia_files/edit.png"></a></div><a name="Courseware-7"></a>
+<h3>Courseware<a href="http://inia.objectfrontier.com/redmine/projects/engineering/wiki/_MongoDB#Courseware-7" class="wiki-anchor">¶</a></h3>
+
+
+	<p>Introduction to Mongoose</p>
+
+
+	<ul>
+	<li><a href="https://www.youtube.com/watch?v=fDxtbWX1BiQ" class="external">Introduction to Week 7</a> [2:12]</li>
+	</ul>
+
+
+	<ul>
+	<li><a href="https://www.youtube.com/watch?v=iWZ6GtUffT0" class="external">Introduction to Blog</a> [2:31]</li>
+	</ul>
+
+
+	<ul>
+	<li><a href="https://www.youtube.com/watch?v=0Ee4KXvEmXk" class="external">Express with Mongoose</a> [7:11]</li>
+	</ul>
+
+
+	<ul>
+	<li><a href="https://www.youtube.com/watch?v=etQKi5Sb8GU" class="external">Jade</a> [5:15]</li>
+	</ul>
+
+
+	<ul>
+	<li><a href="https://www.youtube.com/watch?v=S5cp8rCjqJc" class="external">Views</a> [3:08]</li>
+	</ul>
+
+
+	<ul>
+	<li><a href="https://www.youtube.com/watch?v=nJsFV4adxo4" class="external">Error Handling</a> [2:46]</li>
+	</ul>
+
+
+	<ul>
+	<li><a href="https://www.youtube.com/watch?v=V-vnAd2PDbs" class="external">Authentication</a> [3:46]</li>
+	</ul>
+
+
+	<ul>
+	<li><a href="https://www.youtube.com/watch?v=u0J70a2mQzM" class="external">Model</a> [3:24]</li>
+	</ul>
+
+
+	<ul>
+	<li><a href="https://www.youtube.com/watch?v=sH338S08xEw" class="external">Middleware</a> [3:02]</li>
+	</ul>
+
+
+	<ul>
+	<li><a href="https://www.youtube.com/watch?v=fx5DI_85PWo" class="external">Routes</a> [12:51]</li>
+	</ul>
+
+
+	<ul>
+	<li><a href="https://www.youtube.com/watch?v=pqsdU4851NA" class="external">Login Simplification</a> [2:14]</li>
+	</ul>
+
+
+	<ul>
+	<li><a href="https://www.youtube.com/watch?v=oblu8zSC7PA" class="external">Creating Posts</a> [3:44]</li>
+	</ul>
+
+
+	<ul>
+	<li><a href="https://www.youtube.com/watch?v=nvBF1r1Y_y0" class="external">Blog Post Model</a> [2:48]</li>
+	</ul>
+
+
+	<ul>
+	<li><a href="https://www.youtube.com/watch?v=uFcg8nMkxF8" class="external">Post Display Route</a> [2:47]</li>
+	</ul>
+
+
+	<ul>
+	<li><a href="https://www.youtube.com/watch?v=OR0g_r13hok" class="external">Revisiting Homepage</a> [2:57]</li>
+	</ul>
+
+
+	<ul>
+	<li><a href="https://www.youtube.com/watch?v=WmnsjuMmesw" class="external">Deleting Posts</a> [1:10]</li>
+	</ul>
+
+
+	<ul>
+	<li><a href="https://www.youtube.com/watch?v=LMSkdsHUsKY" class="external">Editing Posts</a> [5:53]</li>
+	</ul>
+
+
+	<ul>
+	<li><a href="https://www.youtube.com/watch?v=q0-duqCwORk" class="external">Comments</a> [8:33]</li>
+	</ul>
+</div>
+
+
+
+
+<div id="wiki_add_attachment">
+<p><a href="./MongoDB - Solution Engineering Group - iNia_files/MongoDB - Solution Engineering Group - iNia.html" id="attach_files_link" onclick="$(&#39;#add_attachment_form&#39;).show(); return false;">New file</a></p>
+<form accept-charset="UTF-8" action="http://inia.objectfrontier.com/redmine/projects/engineering/wiki/_MongoDB/add_attachment" enctype="multipart/form-data" id="add_attachment_form" method="post" style="display:none;"><div style="margin:0;padding:0;display:inline"><input name="utf8" type="hidden" value="✓"><input name="authenticity_token" type="hidden" value="d1h+VofSOuzc6yYIIB1Q7PaU3UvpE387aNwrkJRMKZQ="></div>
+  <div class="box">
+  <p><span id="attachments_fields">
+</span>
+<span class="add_attachment">
+<input class="file_selector" data-description-placeholder="Optional description" data-max-concurrent-uploads="2" data-max-file-size-message="This file cannot be uploaded because it exceeds the maximum allowed file size (5 MB)" data-max-file-size="5242880" data-upload-path="/redmine/uploads.js" multiple="multiple" name="attachments[dummy][file]" onchange="addInputFiles(this);" type="file">
+(Maximum size: 5 MB)
+</span><span id="cbp_images_form">
+  <span id="cbp_image_fields"></span>
+  <span class="add_attachment"><a class="add_attachment" href="http://inia.objectfrontier.com/redmine/projects/engineering/wiki/_MongoDB#" onclick="cbImagePaste.showPasteDialog(); return false;; return false;">Add picture from clipboard</a>
+  (Maximum size: 5 MB)</span>
+</span>
+
+</p>
+  </div>
+<input name="commit" type="submit" value="Add">
+<a href="./MongoDB - Solution Engineering Group - iNia_files/MongoDB - Solution Engineering Group - iNia.html" onclick="$(&#39;#add_attachment_form&#39;).hide(); return false;">Cancel</a>
+</form></div>
+
+
+
+
+        
+        <div style="clear:both;"></div>
+    </div>
+</div>
+</div>
+
+<div id="ajax-indicator" style="display:none;"><span>Loading...</span></div>
+<div id="ajax-modal" style="display:none;"></div>
+
+<div id="footer">
+  <div class="bgl"><div class="bgr">
+    Powered by <a href="http://bitnami.com/stack/redmine">BitNami Redmine Stack</a> © 2006-2013 Jean-Philippe Lang
+  </div></div>
+</div>
+</div>
+</div>
+
+
+
+<!-- input field span inspired by redmine/app/views/attachments/_form.html.erb -->
+
+
+<!-- clipboard paste dialog -->
+<div id="cbp_paste_dlg" title="Add picture from clipboard" style="display:none">
+  <script type="text/javascript">
+    // translated labels go here (inside namespace)
+    (function(cbImagePaste, $, undefined) {
+      cbImagePaste.cbp_txt_crop_box        = "crop box:  x={1}  y={2}  width={3}  height={4}";
+      cbImagePaste.cbp_txt_print           = "Use PrintScreen key and then Ctrl+V.";
+      cbImagePaste.cbp_txt_select          = "Use mouse to select specific part of the image.";
+      cbImagePaste.cbp_txt_deselect        = "Click outside selection to deselect.";
+      cbImagePaste.cbp_txt_empty_cb        = "The clipboard is empty. Try PrintScreen key again.";
+      cbImagePaste.cbp_txt_no_image_cb     = "No image found in the clipboard. Try PrintScreen key again.";
+      cbImagePaste.cbp_txt_no_image_pst    = "No image has been pasted yet. Insert some first.";
+      cbImagePaste.cbp_txt_too_many_files  = "Cannot add another attachment. Number of file attachments allowed for one update is limited to 10.";
+      cbImagePaste.cbp_txt_wrong_browser   = "Your current browser cannot paste pictures. Please use Mozilla Firefox ver. >= 5 or Google Chrome ver. >= 13.";
+      cbImagePaste.cbp_txt_btn_ok          = "Ok";
+      cbImagePaste.cbp_txt_btn_cancel      = "Cancel";
+      cbImagePaste.cbp_txt_too_big_image   = "This file cannot be uploaded because it exceeds the maximum allowed file size (5 MB)";
+      cbImagePaste.cbp_max_attach_size     = 5242880;
+      cbImagePaste.cbp_max_attachments     = 10;
+      cbImagePaste.cbp_min_chrome_ver      = 535;
+      cbImagePaste.cbp_min_firefox_ver     = 5;
+      cbImagePaste.cbp_act_update_id       = 841;
+    }(window.cbImagePaste = window.cbImagePaste || {}, j$cbp));
+  </script>
+
+  <div id="cbp_header_box">
+    <!-- canvas id="cbp_thumbnail" width="60" height="60"></canvas -->
+    <div id="cbp_instructions">&nbsp;</div>
+  </div>
+  <div id="cbp_panel_box">
+    <!-- place for pasted image editor -->
+  </div>
+</div>
+
+<!-- dialog to copy image link for wiki -->
+<div id="cbp_link_dlg" title="Copy image and thumbnail link" style="display:none">
+  <input type="text" id="cbp_image_link" readonly="">
+  <p>
+  <input type="text" id="cbp_thumbnail_link" readonly="">
+</p></div>
+
+
+
+<div id="fancybox-tmp"></div><div id="fancybox-loading"><div></div></div><div id="fancybox-overlay"></div><div id="fancybox-wrap"><div id="fancybox-outer"><div class="fancybox-bg" id="fancybox-bg-n"></div><div class="fancybox-bg" id="fancybox-bg-ne"></div><div class="fancybox-bg" id="fancybox-bg-e"></div><div class="fancybox-bg" id="fancybox-bg-se"></div><div class="fancybox-bg" id="fancybox-bg-s"></div><div class="fancybox-bg" id="fancybox-bg-sw"></div><div class="fancybox-bg" id="fancybox-bg-w"></div><div class="fancybox-bg" id="fancybox-bg-nw"></div><div id="fancybox-content"></div><a id="fancybox-close"></a><div id="fancybox-title"></div><a href="javascript:;" id="fancybox-left"><span class="fancy-ico" id="fancybox-left-ico"></span></a><a href="javascript:;" id="fancybox-right"><span class="fancy-ico" id="fancybox-right-ico"></span></a></div></div></body></html>

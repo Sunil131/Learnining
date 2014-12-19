@@ -1,0 +1,473 @@
+<!DOCTYPE html>
+<!-- saved from url=(0072)http://inia.objectfrontier.com/redmine/projects/engineering/wiki/_Nodejs -->
+<html lang="en"><head><meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+<meta charset="utf-8">
+<title> Nodejs - Solution Engineering Group - iNia</title>
+<meta name="description" content="Redmine">
+<meta name="keywords" content="issue,bug,tracker">
+<meta content="authenticity_token" name="csrf-param">
+<meta content="08FcSL6U01xeZXAcLDWlkapOWvHXdjJsd3DDdEq4lHE=" name="csrf-token">
+<link rel="shortcut icon" href="http://inia.objectfrontier.com/redmine/favicon.ico?1385196105">
+<link href="./Nodejs - Solution Engineering Group - iNia_files/jquery-ui-1.9.2.css" media="all" rel="stylesheet" type="text/css">
+<link href="./Nodejs - Solution Engineering Group - iNia_files/application.css" media="all" rel="stylesheet" type="text/css">
+
+<script src="./Nodejs - Solution Engineering Group - iNia_files/jquery-1.8.3-ui-1.9.2-ujs-2.0.3.js" type="text/javascript"></script>
+<script src="./Nodejs - Solution Engineering Group - iNia_files/application.js" type="text/javascript"></script>
+<script type="text/javascript">
+//<![CDATA[
+$(window).load(function(){ warnLeavingUnsaved('The current page contains unsaved text that will be lost if you leave this page.'); });
+//]]>
+</script>
+
+
+<script src="./Nodejs - Solution Engineering Group - iNia_files/redmine_dmsf.js" type="text/javascript"></script>
+<link href="./Nodejs - Solution Engineering Group - iNia_files/dmsf.css" media="screen" rel="stylesheet" type="text/css"> <link href="./Nodejs - Solution Engineering Group - iNia_files/jquery.fancybox-1.3.4.css" media="screen" rel="stylesheet" type="text/css"><link href="./Nodejs - Solution Engineering Group - iNia_files/lightbox.css" media="screen" rel="stylesheet" type="text/css"><script src="./Nodejs - Solution Engineering Group - iNia_files/jquery.fancybox-1.3.4.pack.js" type="text/javascript"></script><script src="./Nodejs - Solution Engineering Group - iNia_files/jquery.easing-1.3.pack.js" type="text/javascript"></script><script src="./Nodejs - Solution Engineering Group - iNia_files/lightbox.js" type="text/javascript"></script> <script type="text/javascript">
+	if(!window.jQuery) {
+	    var script = document.createElement('script');
+	    script.src = '/plugin_assets/redmine_mention_plugin/javascripts/lib/jquery.min.js';
+	    script.type = 'text/javascript';
+	    document.getElementsByTagName('body')[0].appendChild(script);
+	}
+</script>
+<script src="./Nodejs - Solution Engineering Group - iNia_files/underscore-min.js" type="text/javascript"></script>
+<script src="./Nodejs - Solution Engineering Group - iNia_files/jquery.elastic.js" type="text/javascript"></script>
+<script src="./Nodejs - Solution Engineering Group - iNia_files/jquery.events.input.js" type="text/javascript"></script>
+<script src="./Nodejs - Solution Engineering Group - iNia_files/jquery.mentionsInput.js" type="text/javascript"></script>
+<script src="./Nodejs - Solution Engineering Group - iNia_files/redmine-mention.js" type="text/javascript"></script>
+<link href="./Nodejs - Solution Engineering Group - iNia_files/jquery.mentionsInput.css" media="screen" rel="stylesheet" type="text/css"> <script src="./Nodejs - Solution Engineering Group - iNia_files/wkstatus.js" type="text/javascript"></script>
+<link href="./Nodejs - Solution Engineering Group - iNia_files/lockwarning.css" media="screen" rel="stylesheet" type="text/css"> <link href="./Nodejs - Solution Engineering Group - iNia_files/jquery.Jcrop-0.9.10.min.css" media="all" rel="stylesheet" type="text/css">
+<link href="./Nodejs - Solution Engineering Group - iNia_files/clipboard_image_paste.css" media="all" rel="stylesheet" type="text/css">
+<script src="./Nodejs - Solution Engineering Group - iNia_files/jcrop-0.9.10.min.js" type="text/javascript"></script>
+<script src="./Nodejs - Solution Engineering Group - iNia_files/clipboard_image_paste.js" type="text/javascript"></script>
+  <script type="text/javascript">
+    var j$cbp = $;
+  </script>
+
+<!-- page specific tags -->
+  <script src="./Nodejs - Solution Engineering Group - iNia_files/attachments.js" type="text/javascript"></script>
+</head>
+<body class="theme-Alternate project-engineering controller-wiki action-show">
+<div id="wrapper">
+<div id="wrapper2">
+<div id="wrapper3">
+<div id="top-menu">
+    <div id="account">
+        <ul><li><a href="http://inia.objectfrontier.com/redmine/my/account" class="my-account">My account</a></li>
+<li><a href="http://inia.objectfrontier.com/redmine/logout" class="logout" data-method="post" rel="nofollow">Sign out</a></li></ul>    </div>
+    <div id="loggedas">Logged in as <a href="http://inia.objectfrontier.com/redmine/users/579" class="user active">sunilm</a></div>
+    <ul><li><a href="http://inia.objectfrontier.com/redmine/" class="home">Home</a></li>
+<li><a href="http://inia.objectfrontier.com/redmine/my/page" class="my-page">My page</a></li>
+<li><a href="http://inia.objectfrontier.com/redmine/projects" class="projects">Projects</a></li>
+<li><a href="http://inia.objectfrontier.com/redmine/wktime/index" class="wkTime">Time &amp; Expense</a></li>
+<li><a href="http://www.redmine.org/guide" class="help">Help</a></li></ul></div>
+
+<div id="header">
+    <div id="quick-search">
+        <form accept-charset="UTF-8" action="http://inia.objectfrontier.com/redmine/projects/engineering/search" method="get"><div style="margin:0;padding:0;display:inline"><input name="utf8" type="hidden" value="✓"></div>
+        <input name="wiki_pages" type="hidden" value="1">
+        <label for="q">
+          <a href="http://inia.objectfrontier.com/redmine/projects/engineering/search" accesskey="4">Search</a>:
+        </label>
+        <input accesskey="f" class="small" id="q" name="q" size="20" type="text">
+</form>        <select id="project_quick_jump_box" name="project_quick_jump_box" onchange="if (this.value != &#39;&#39;) { window.location = this.value; }"><option value="">Jump to a project...</option><option value="" disabled="disabled">---</option><option selected="selected" value="/redmine/projects/engineering?jump=wiki">Solution Engineering Group</option><option value="/redmine/projects/mean-stack-nov-14?jump=wiki">MEAN Stack Nov-14</option></select>
+    </div>
+
+    <h1>Solution Engineering Group</h1>
+
+    <div id="main-menu">
+        <ul><li><a href="http://inia.objectfrontier.com/redmine/projects/engineering" class="overview">Overview</a></li>
+<li><a href="http://inia.objectfrontier.com/redmine/projects/engineering/activity" class="activity">Activity</a></li>
+<li><a href="http://inia.objectfrontier.com/redmine/adtasks/list?project_id=engineering" class="adtasks">Tasks</a></li>
+<li><a href="http://inia.objectfrontier.com/redmine/adsprints/list?project_id=engineering" class="adsprints">Sprints</a></li>
+<li><a href="http://inia.objectfrontier.com/redmine/adburndown/show?project_id=engineering" class="adburndown">Run charts</a></li>
+<li><a href="http://inia.objectfrontier.com/redmine/projects/engineering/roadmap" class="roadmap">Roadmap</a></li>
+<li><a href="http://inia.objectfrontier.com/redmine/projects/engineering/issues" class="issues">Issues</a></li>
+<li><a href="http://inia.objectfrontier.com/redmine/projects/engineering/issues/new" accesskey="7" class="new-issue">New issue</a></li>
+<li><a href="http://inia.objectfrontier.com/redmine/projects/engineering/issues/gantt" class="gantt">Gantt</a></li>
+<li><a href="http://inia.objectfrontier.com/redmine/projects/engineering/issues/calendar" class="calendar">Calendar</a></li>
+<li><a href="http://inia.objectfrontier.com/redmine/projects/engineering/news" class="news">News</a></li>
+<li><a href="http://inia.objectfrontier.com/redmine/projects/engineering/dmsf" class="dmsf">DMSF</a></li>
+<li><a href="http://inia.objectfrontier.com/redmine/projects/engineering/wiki" class="wiki selected">Wiki</a></li>
+<li><a href="http://inia.objectfrontier.com/redmine/projects/engineering/settings" class="settings">Settings</a></li></ul>
+    </div>
+</div>
+
+<div id="main" class="">
+    <div id="sidebar">
+          
+<h3>Wiki</h3>
+<ul>
+  <li><a href="http://inia.objectfrontier.com/redmine/projects/engineering/wiki">Start page</a></li>
+  <li><a href="http://inia.objectfrontier.com/redmine/projects/engineering/wiki/index">Index by title</a></li>
+  <li><a href="http://inia.objectfrontier.com/redmine/projects/engineering/wiki/date_index">Index by date</a></li>
+</ul>
+
+
+        
+    </div>
+
+    <div id="content">
+        
+        <div class="contextual">
+  <a href="http://inia.objectfrontier.com/redmine/projects/engineering/wiki/_Nodejs/edit" accesskey="e" class="icon icon-edit">Edit</a>
+  <a href="http://inia.objectfrontier.com/redmine/watchers/watch?object_id=97&object_type=wiki_page" class="wiki_page-97-watcher icon icon-fav-off" data-method="post" data-remote="true" rel="nofollow">Watch</a>
+  
+  
+  
+  
+<a href="http://inia.objectfrontier.com/redmine/projects/engineering/wiki/_Nodejs/history" class="icon icon-history">History</a>
+</div>
+
+<p class="breadcrumb"><a href="http://inia.objectfrontier.com/redmine/projects/engineering/wiki/Wiki">Wiki</a> » </p>
+
+
+<div class="wiki wiki-page">
+  <a name="Nodejs"></a>
+<h1> Nodejs<a href="http://inia.objectfrontier.com/redmine/projects/engineering/wiki/_Nodejs#Nodejs" class="wiki-anchor">¶</a></h1>
+
+
+	<p><span style="color:red;font-weight:bold;font-size:30px;">[WORK IN PROGRESS]</span></p>
+
+
+	<p><span style="color:blue;font-weight:bold;font-size:16px;">As this is a work in progress, the content and the order can be changed any time.</span></p>
+
+
+	<div class="contextual" id="section-2" title="Edit this section"><a href="http://inia.objectfrontier.com/redmine/projects/engineering/wiki/_Nodejs/edit?section=2"><img alt="Edit" src="./Nodejs - Solution Engineering Group - iNia_files/edit.png"></a></div><a name="Quick-Start-here"></a>
+<h2><span style="font-size:20px;">Quick Start here</span><a href="http://inia.objectfrontier.com/redmine/projects/engineering/wiki/_Nodejs#Quick-Start-here" class="wiki-anchor">¶</a></h2>
+
+
+	<p><span style="color:brown;font-weight:bold;font-size:16px;">Following order of the resources below is a preferred approach to learn progressively and quickly.<br>You will learn to write a full fledged node.js web app that uses express, passport and mongoose (MongoDB)<br>Additional sections are optional, but they will help in understanding the core concepts much clearer</span></p>
+
+
+	<ul>
+	<li><a href="http://www.learnallthenodes.com/episodes/1-what-is-nodejs" class="external">1. What is Node.js?</a> - Know about Node.js, a high level understanding</li>
+	</ul>
+
+
+	<ul>
+	<li>[Additional] <a href="http://www.youtube.com/watch?v=jo_B4LTHi3I" class="external">Introduction to Node.js with Ryan Dahl</a> - Know about Node.js from the creator of Node</li>
+	</ul>
+
+
+	<ul>
+	<li>[Additional] <a href="http://www.youtube.com/watch?v=F6k8lTrAE2g" class="external">Node.js: JavaScript on the Server</a> - Node.js purpose and evolution</li>
+	</ul>
+
+
+	<ul>
+	<li><a href="http://www.learnallthenodes.com/episodes/2-a-simple-app" class="external">2. A Simple App</a> - Start creating a simple node web server app</li>
+	</ul>
+
+
+	<ul>
+	<li>[Additional] <a href="http://www.nodebeginner.org/#a-full-blown-web-application-with-nodejs" class="external">Understanding Web Application Stack &amp; Fundamentals</a></li>
+	</ul>
+
+
+	<ul>
+	<li>[Additional] <a href="http://blog.modulus.io/absolute-beginners-guide-to-nodejs" class="external">Absolute Beginners Guide to Node.js</a> - Yet another, but has file I/O details</li>
+	</ul>
+
+
+	<ul>
+	<li><a href="http://www.learnallthenodes.com/episodes/3-beginning-routing-in-nodejs" class="external">3. Beginning routing in Node.js</a> - Use Express.js to do more in your web app</li>
+	</ul>
+
+
+	<ul>
+	<li><a href="http://www.learnallthenodes.com/episodes/4-cleaning-up-with-express-routing" class="external">4. Cleaning Up With Express Routing</a> - Get involved in Express.js</li>
+	</ul>
+
+
+	<ul>
+	<li><a href="http://www.learnallthenodes.com/episodes/5-middleware-in-express" class="external">5. Middleware in Express</a> - Find out what makes Express.js powerful &amp; flexible</li>
+	</ul>
+
+
+	<ul>
+	<li><a href="http://www.learnallthenodes.com/episodes/6-deep-into-custom-middleware" class="external">6. Deep into custom middleware</a> - Understanding middleware in Express.js</li>
+	</ul>
+
+
+	<ul>
+	<li><a href="http://www.learnallthenodes.com/episodes/7-node-code-in-other-files" class="external">7. Node code in other files</a> - Introducing modules, exports in Node.js</li>
+	</ul>
+
+
+	<ul>
+	<li>[Additional] <a href="http://nodetuts.com/05-modules.html" class="external">Modules in Node</a></li>
+	</ul>
+
+
+	<ul>
+	<li>[Additional] <a href="http://nodetuts.com/06-third-party-modules.html" class="external">Third-party Modules and NPM</a></li>
+	</ul>
+
+
+	<ul>
+	<li><a href="http://www.learnallthenodes.com/episodes/8-how-to-structure-a-node-app" class="external">8. How to structure a Node app</a> - Find a way to organize your project
+	<ul>
+	<li>There are many approach to structure your project. More details will be added in advanced/other resources.</li>
+	</ul></li>
+	</ul>
+
+
+	<ul>
+	<li><a href="http://www.learnallthenodes.com/episodes/9-view-templates-in-nodejs-with-jade" class="external">9. View templates in Node.js with Jade</a> - Organize/Abstract your view with templates
+	<ul>
+	<li>Templates is a basic method used in Express.js to bind data with view. There are many template and view engines available in Express through consolidate middleware. Jade is simple and elegant.</li>
+	</ul></li>
+	</ul>
+
+
+	<ul>
+	<li><a href="http://www.learnallthenodes.com/episodes/10-more-advanced-jade" class="external">10. More advanced Jade</a></li>
+	</ul>
+
+
+	<ul>
+	<li><a href="http://www.learnallthenodes.com/episodes/11-mongodb--node--mongoose-an-intro" title="an intro" class="external">11. MongoDB + Node = Mongoose</a> - Add database to your app</li>
+	</ul>
+
+
+	<ul>
+	<li>[Optional] <a href="https://www.youtube.com/watch?v=SgQv3KWEGDc" class="external">MongoDB plugin</a> - Learn to use mongodb package to connect to MongoDB server</li>
+	</ul>
+
+
+	<ul>
+	<li><a href="http://www.learnallthenodes.com/episodes/12-unique-records-in-mongoose" class="external">12. Unique records in Mongoose</a></li>
+	</ul>
+
+
+	<ul>
+	<li><a href="http://www.learnallthenodes.com/episodes/13-custom-validations-in-mongoose" class="external">13. Custom validations in Mongoose</a></li>
+	</ul>
+
+
+	<ul>
+	<li>Refer <a href="http://www.learnallthenodes.com/" class="external">here</a> to continue the series</li>
+	</ul>
+
+
+	<ul>
+	<li>TODO - Cover the following
+	<ul>
+	<li>Core Modules - Process, OS, File System, Buffer, Events, Cluster, ... </li>
+		<li>Error Handling</li>
+		<li>Others - authentication, authorization, web sockets, ...</li>
+	</ul></li>
+	</ul>
+
+
+	<div class="contextual" id="section-3" title="Edit this section"><a href="http://inia.objectfrontier.com/redmine/projects/engineering/wiki/_Nodejs/edit?section=3"><img alt="Edit" src="./Nodejs - Solution Engineering Group - iNia_files/edit.png"></a></div><a name="Other-ResourcesFollowing-resources-are-in-no-order-Some-might-be-already-added-in-the-above-list"></a>
+<h2><span style="font-size:20px;">Other Resources</span><br><span style="color:brown;font-weight:bold;font-size:16px;">Following resources are in no order. Some might be already added in the above list</span><a href="http://inia.objectfrontier.com/redmine/projects/engineering/wiki/_Nodejs#Other-ResourcesFollowing-resources-are-in-no-order-Some-might-be-already-added-in-the-above-list" class="wiki-anchor">¶</a></h2>
+
+
+	<div class="contextual" id="section-4" title="Edit this section"><a href="http://inia.objectfrontier.com/redmine/projects/engineering/wiki/_Nodejs/edit?section=4"><img alt="Edit" src="./Nodejs - Solution Engineering Group - iNia_files/edit.png"></a></div><a name="Resources-for-Nodejs-self-paced-learning"></a>
+<h2>Resources for Node.js self-paced learning<a href="http://inia.objectfrontier.com/redmine/projects/engineering/wiki/_Nodejs#Resources-for-Nodejs-self-paced-learning" class="wiki-anchor">¶</a></h2>
+
+
+	<ul>
+	<li><a href="https://github.com/maxogden/art-of-node/#the-art-of-node" class="external">Art of Node</a> - Understanding Node.js, core modules, callbacks, events, module system, npm, etc</li>
+	</ul>
+
+
+	<ul>
+	<li><a href="http://nodeschool.io/" class="external">Nodeschool.io</a> - Tutorials on javascript, node.js - http, async i/o, express.js &amp; much more</li>
+	</ul>
+
+
+	<ul>
+	<li><a href="http://www.nodebeginner.org/" class="external">The Node Beginner Book</a>
+	<ul>
+	<li><a href="http://www.nodebeginner.org/#a-full-blown-web-application-with-nodejs" class="external">Web Application Stack</a></li>
+		<li><a href="http://www.nodebeginner.org/#building-the-application-stack" class="external">Web Application Fundamentals</a></li>
+	</ul></li>
+	</ul>
+
+
+	<ul>
+	<li><a href="http://code.tutsplus.com/tutorials/node-js-for-beginners--net-26314" class="external">Node.js for beginners</a> - Another introduction to working with Node.js</li>
+	</ul>
+
+
+	<ul>
+	<li><a href="http://blog.modulus.io/absolute-beginners-guide-to-nodejs" class="external">Absolute Beginners Guide to Node.js</a> - Yet another, but has file I/O details</li>
+	</ul>
+
+
+	<div class="contextual" id="section-5" title="Edit this section"><a href="http://inia.objectfrontier.com/redmine/projects/engineering/wiki/_Nodejs/edit?section=5"><img alt="Edit" src="./Nodejs - Solution Engineering Group - iNia_files/edit.png"></a></div><a name="Very-Useful-Resources"></a>
+<h2>Very Useful Resources<a href="http://inia.objectfrontier.com/redmine/projects/engineering/wiki/_Nodejs#Very-Useful-Resources" class="wiki-anchor">¶</a></h2>
+
+
+	<ul>
+	<li><a href="http://www.youtube.com/watch?v=jo_B4LTHi3I" class="external">Introduction to Node.js with Ryan Dahl</a> - Know about Node.js from the creator of Node</li>
+	</ul>
+
+
+	<ul>
+	<li><a href="http://www.youtube.com/watch?v=F6k8lTrAE2g" class="external">Node.js: JavaScript on the Server</a> - Node.js purpose and evolution</li>
+	</ul>
+
+
+	<div class="contextual" id="section-6" title="Edit this section"><a href="http://inia.objectfrontier.com/redmine/projects/engineering/wiki/_Nodejs/edit?section=6"><img alt="Edit" src="./Nodejs - Solution Engineering Group - iNia_files/edit.png"></a></div><a name="Video-Tutorials"></a>
+<h2>Video Tutorials<a href="http://inia.objectfrontier.com/redmine/projects/engineering/wiki/_Nodejs#Video-Tutorials" class="wiki-anchor">¶</a></h2>
+
+
+	<ul>
+	<li><a href="http://nodetuts.com/" class="external">Node Tuts</a> - Video tutorials covering many core concepts</li>
+	</ul>
+
+
+	<ul>
+	<li><a href="http://www.learnallthenodes.com/" class="external">Learn All The Nodes</a></li>
+	</ul>
+
+
+	<ul>
+	<li><a href="http://www.youtube.com/watch?v=0_GNHWZHc-o" class="external">Node.js and MongoDB</a> - Follow the tutorials</li>
+	</ul>
+
+
+	<ul>
+	<li><a href="http://vimeo.com/18077379" class="external">Server-side JavaScript with Node, Connect &amp; Express</a></li>
+	</ul>
+
+
+	<ul>
+	<li><a href="http://www.infoq.com/presentations/nodejs" class="external">Asynchronous Purity Leads to Faster Development</a> - from Node creator Ryan Dahl</li>
+	</ul>
+
+
+	<ul>
+	<li><a href="http://www.infoq.com/presentations/Nodejs-Asynchronous-IO-for-Fun-and-Profit" class="external">Node.js: Asynchronous I/O for Fun and Profit</a></li>
+	</ul>
+
+
+	<ul>
+	<li><a href="http://www.infoq.com/presentations/Parallel-Programming-with-Nodejs" class="external">Parallel Programming with Node.js</a></li>
+	</ul>
+
+
+	<div class="contextual" id="section-7" title="Edit this section"><a href="http://inia.objectfrontier.com/redmine/projects/engineering/wiki/_Nodejs/edit?section=7"><img alt="Edit" src="./Nodejs - Solution Engineering Group - iNia_files/edit.png"></a></div><a name="Advanced"></a>
+<h2>Advanced<a href="http://inia.objectfrontier.com/redmine/projects/engineering/wiki/_Nodejs#Advanced" class="wiki-anchor">¶</a></h2>
+
+
+	<ul>
+	<li><a href="http://www.joyent.com/developers/node" class="external">Joyent's Node site</a> - See what the developers of Node tells you! Has tips, tricks &amp; standards from design to deploy</li>
+	</ul>
+
+
+	<div class="contextual" id="section-8" title="Edit this section"><a href="http://inia.objectfrontier.com/redmine/projects/engineering/wiki/_Nodejs/edit?section=8"><img alt="Edit" src="./Nodejs - Solution Engineering Group - iNia_files/edit.png"></a></div><a name="Hands-on-tutorials-to-build-working-apps"></a>
+<h2>Hands-on tutorials to build working apps<a href="http://inia.objectfrontier.com/redmine/projects/engineering/wiki/_Nodejs#Hands-on-tutorials-to-build-working-apps" class="wiki-anchor">¶</a></h2>
+
+
+	<ul>
+	<li><a href="http://howtonode.org/express-mongodb" class="external">Blog with Node.js, Express &amp; MongoDB</a>
+*</li>
+	</ul>
+
+
+	<div class="contextual" id="section-9" title="Edit this section"><a href="http://inia.objectfrontier.com/redmine/projects/engineering/wiki/_Nodejs/edit?section=9"><img alt="Edit" src="./Nodejs - Solution Engineering Group - iNia_files/edit.png"></a></div><a name="Other-useful-Nodejs-guides"></a>
+<h2>Other useful Node.js guides<a href="http://inia.objectfrontier.com/redmine/projects/engineering/wiki/_Nodejs#Other-useful-Nodejs-guides" class="wiki-anchor">¶</a></h2>
+
+
+	<ul>
+	<li><a href="http://nodeguide.com/" class="external">Node.js Guide</a> - Some coding guidelines</li>
+	</ul>
+</div>
+
+
+
+
+<div id="wiki_add_attachment">
+<p><a href="./Nodejs - Solution Engineering Group - iNia_files/Nodejs - Solution Engineering Group - iNia.html" id="attach_files_link" onclick="$(&#39;#add_attachment_form&#39;).show(); return false;">New file</a></p>
+<form accept-charset="UTF-8" action="http://inia.objectfrontier.com/redmine/projects/engineering/wiki/_Nodejs/add_attachment" enctype="multipart/form-data" id="add_attachment_form" method="post" style="display:none;"><div style="margin:0;padding:0;display:inline"><input name="utf8" type="hidden" value="✓"><input name="authenticity_token" type="hidden" value="08FcSL6U01xeZXAcLDWlkapOWvHXdjJsd3DDdEq4lHE="></div>
+  <div class="box">
+  <p><span id="attachments_fields">
+</span>
+<span class="add_attachment">
+<input class="file_selector" data-description-placeholder="Optional description" data-max-concurrent-uploads="2" data-max-file-size-message="This file cannot be uploaded because it exceeds the maximum allowed file size (5 MB)" data-max-file-size="5242880" data-upload-path="/redmine/uploads.js" multiple="multiple" name="attachments[dummy][file]" onchange="addInputFiles(this);" type="file">
+(Maximum size: 5 MB)
+</span><span id="cbp_images_form">
+  <span id="cbp_image_fields"></span>
+  <span class="add_attachment"><a class="add_attachment" href="http://inia.objectfrontier.com/redmine/projects/engineering/wiki/_Nodejs#" onclick="cbImagePaste.showPasteDialog(); return false;; return false;">Add picture from clipboard</a>
+  (Maximum size: 5 MB)</span>
+</span>
+
+</p>
+  </div>
+<input name="commit" type="submit" value="Add">
+<a href="./Nodejs - Solution Engineering Group - iNia_files/Nodejs - Solution Engineering Group - iNia.html" onclick="$(&#39;#add_attachment_form&#39;).hide(); return false;">Cancel</a>
+</form></div>
+
+
+
+
+        
+        <div style="clear:both;"></div>
+    </div>
+</div>
+</div>
+
+<div id="ajax-indicator" style="display:none;"><span>Loading...</span></div>
+<div id="ajax-modal" style="display:none;"></div>
+
+<div id="footer">
+  <div class="bgl"><div class="bgr">
+    Powered by <a href="http://bitnami.com/stack/redmine">BitNami Redmine Stack</a> © 2006-2013 Jean-Philippe Lang
+  </div></div>
+</div>
+</div>
+</div>
+
+
+
+<!-- input field span inspired by redmine/app/views/attachments/_form.html.erb -->
+
+
+<!-- clipboard paste dialog -->
+<div id="cbp_paste_dlg" title="Add picture from clipboard" style="display:none">
+  <script type="text/javascript">
+    // translated labels go here (inside namespace)
+    (function(cbImagePaste, $, undefined) {
+      cbImagePaste.cbp_txt_crop_box        = "crop box:  x={1}  y={2}  width={3}  height={4}";
+      cbImagePaste.cbp_txt_print           = "Use PrintScreen key and then Ctrl+V.";
+      cbImagePaste.cbp_txt_select          = "Use mouse to select specific part of the image.";
+      cbImagePaste.cbp_txt_deselect        = "Click outside selection to deselect.";
+      cbImagePaste.cbp_txt_empty_cb        = "The clipboard is empty. Try PrintScreen key again.";
+      cbImagePaste.cbp_txt_no_image_cb     = "No image found in the clipboard. Try PrintScreen key again.";
+      cbImagePaste.cbp_txt_no_image_pst    = "No image has been pasted yet. Insert some first.";
+      cbImagePaste.cbp_txt_too_many_files  = "Cannot add another attachment. Number of file attachments allowed for one update is limited to 10.";
+      cbImagePaste.cbp_txt_wrong_browser   = "Your current browser cannot paste pictures. Please use Mozilla Firefox ver. >= 5 or Google Chrome ver. >= 13.";
+      cbImagePaste.cbp_txt_btn_ok          = "Ok";
+      cbImagePaste.cbp_txt_btn_cancel      = "Cancel";
+      cbImagePaste.cbp_txt_too_big_image   = "This file cannot be uploaded because it exceeds the maximum allowed file size (5 MB)";
+      cbImagePaste.cbp_max_attach_size     = 5242880;
+      cbImagePaste.cbp_max_attachments     = 10;
+      cbImagePaste.cbp_min_chrome_ver      = 535;
+      cbImagePaste.cbp_min_firefox_ver     = 5;
+      cbImagePaste.cbp_act_update_id       = 523;
+    }(window.cbImagePaste = window.cbImagePaste || {}, j$cbp));
+  </script>
+
+  <div id="cbp_header_box">
+    <!-- canvas id="cbp_thumbnail" width="60" height="60"></canvas -->
+    <div id="cbp_instructions">&nbsp;</div>
+  </div>
+  <div id="cbp_panel_box">
+    <!-- place for pasted image editor -->
+  </div>
+</div>
+
+<!-- dialog to copy image link for wiki -->
+<div id="cbp_link_dlg" title="Copy image and thumbnail link" style="display:none">
+  <input type="text" id="cbp_image_link" readonly="">
+  <p>
+  <input type="text" id="cbp_thumbnail_link" readonly="">
+</p></div>
+
+
+
+<div id="fancybox-tmp"></div><div id="fancybox-loading"><div></div></div><div id="fancybox-overlay"></div><div id="fancybox-wrap"><div id="fancybox-outer"><div class="fancybox-bg" id="fancybox-bg-n"></div><div class="fancybox-bg" id="fancybox-bg-ne"></div><div class="fancybox-bg" id="fancybox-bg-e"></div><div class="fancybox-bg" id="fancybox-bg-se"></div><div class="fancybox-bg" id="fancybox-bg-s"></div><div class="fancybox-bg" id="fancybox-bg-sw"></div><div class="fancybox-bg" id="fancybox-bg-w"></div><div class="fancybox-bg" id="fancybox-bg-nw"></div><div id="fancybox-content"></div><a id="fancybox-close"></a><div id="fancybox-title"></div><a href="javascript:;" id="fancybox-left"><span class="fancy-ico" id="fancybox-left-ico"></span></a><a href="javascript:;" id="fancybox-right"><span class="fancy-ico" id="fancybox-right-ico"></span></a></div></div></body></html>
